@@ -1,0 +1,58 @@
+body {
+    display: block;
+    background-color: #709265;
+    border-radius: 3%;
+    margin-top: 5%;
+  
+  }
+  
+  p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  h1 {
+    margin-top: 3%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    font-weight: bolder;
+    margin-left: 38%;
+  }
+  
+  img {
+    width: 50%;
+    height: 300px;
+    margin-left: 20%;
+    margin-top: 5%;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-areas: "email localizzazione";
+  }
+  
+  .email {
+    grid-area: email;
+    margin-left: 55%;
+  }
+  
+  .localizzazione {
+    grid-area: localizzazione;
+    margin-left: 5%;
+  }
+  
+  h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  @media (max-width: 576px) {
+    img {
+      width: 50%;
+      height: 200px;
+      margin-top: 15%;
+    }
+  
+    .email {
+      margin-left: 1%;
+    }
+  
+  }
