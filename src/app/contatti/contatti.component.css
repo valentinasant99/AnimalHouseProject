@@ -9,8 +9,8 @@ body {
 {
 background-color: bisque;
 border-radius: 10%;
-  max-width: 50%;
-  height: 250px;
+  max-width: 60%;
+  height: 290px;
   padding: 20px;
 
   margin-left: 20%;
@@ -20,10 +20,10 @@ border-radius: 10%;
 {
 background-color: bisque;
 border-radius: 10%;
-  max-width: 120%;
-  height: 450px;
- margin-right: 15%;
-  margin-left: 15%;
+  max-width: 60%;
+  height: 420px;
+ margin-right: 10%;
+  margin-left: 20%;
   margin-top: 1%;
 }
 p {
@@ -39,7 +39,7 @@ h1 {
 
 img {
   width: 70%;
-  height: 450px;
+  height: 480px;
   margin-left: 13%;
   margin-top: 5%;
 }

@@ -33,11 +33,11 @@ body {
   {
     background-color: bisque;
     border-radius: 10%;
-      max-width: 260px;
+      max-width: 300px;
       padding: 15px;
       margin: 0 auto;
       margin-left: 38%;
-      margin-top: 0,05%;
+      margin-top: 15%;
   }
   .form-signin .form-signin-heading, .form-signin .checkbox
   {
@@ -66,7 +66,8 @@ body {
       margin-bottom: -1px;
       border-bottom-left-radius: 0;
       border-bottom-right-radius: 0;
-      margin-left: 7%;
+     max-width: 250px;
+     margin-left: 3%;
       margin-top: 10%;
   }
   .form-signin input[type="password"]
@@ -74,7 +75,8 @@ body {
       margin-bottom: 10px;
       border-top-left-radius: 0;
       border-top-right-radius: 0;
-      margin-left: 7%;
+    max-width: 250px;
+    margin-left: 3%;
       margin-top: 10%;
   }
   .login-title
@@ -96,5 +98,5 @@ body {
   }
   p {
     text-align: center;
-    font-size: 15pt;
+    font-size: 12pt;
   }
