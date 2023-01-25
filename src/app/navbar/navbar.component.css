@@ -1,0 +1,26 @@
+button{
+  color: white;
+  border-color: white;
+  font: 20px Arial, Helvetica, sans-serif;
+}
+
+button:hover{
+  background: darkgoldenrod;
+}
+
+#navbarText, #navbarText1{
+  font: 20px Arial, Helvetica, sans-serif;
+}
+
+#brand{
+  font-size: 30px;
+}
+
+#iconaLogin{
+  padding-top: 4px;
+
+}
+
+#contattiNavbar{
+  padding-top: 6px;
+}

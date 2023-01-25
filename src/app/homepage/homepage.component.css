@@ -1,0 +1,41 @@
+.carousel-inner img {
+  width: 100%;
+  margin: auto;
+  min-height:150px;
+}
+.grid {
+  display: grid;
+  grid-template-areas: "card1 card2 card3";
+}
+.card1 {
+  position: relative;
+  grid-area: card1;
+  margin-left: 20%;
+  background-color: beige;
+}
+.card2 {
+  grid-area: card2;
+  margin-left: 0;
+  background-color: beige;
+}
+.card3 {
+  grid-area: card3;
+  margin-left: 0;
+  background-color: beige;
+}
+
+img {
+  border-radius: 0.5rem 0.5rem 0 0;
+  width: 30%;
+  height: 30%;}
+
+.card h3 {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+}
+
+@media (max-width: 600px) {
+  .carousel-caption {
+    display: none;
+  }
+}
