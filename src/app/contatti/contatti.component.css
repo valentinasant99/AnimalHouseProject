@@ -1,6 +1,5 @@
 body {
   display: block;
-  background-image:url(sfondo.jpg);
   border-radius: 3%;
   margin-top: 5%;
   background-size: cover;
@@ -91,4 +90,3 @@ img {
   }
 
 }
-  
