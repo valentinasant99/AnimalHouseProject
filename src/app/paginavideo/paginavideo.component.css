@@ -18,12 +18,10 @@ h1 {
   {
     background-color: bisque;
     border-radius: 10%;
-      max-width: 30%;
+      max-width: 40%;
       height: 70px;
-      padding: 20px;
-      margin: 0 auto;
-      margin-left: 32%;
-      margin-top: 2%;
+      margin-left: 25%;
+      margin-top: 10%;
   }
   .form-signin1
   {
