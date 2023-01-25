@@ -1,0 +1,91 @@
+h1 {
+    text-align: center;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    font-weight: bolder;
+  }
+  
+  body {
+    display: block;
+    background-image:url(sfondo.jpg);
+    border-radius: 3%;
+    margin-top: 5%;
+    background-size: cover;
+  
+  }
+  
+  .form-signin
+  {
+    background-color: bisque;
+    border-radius: 10%;
+      max-width: 30%;
+      height: 70px;
+      padding: 20px;
+      margin: 0 auto;
+      margin-left: 32%;
+      margin-top: 2%;
+  }
+  .form-signin1
+  {
+    background-color: bisque;
+    border-radius: 10%;
+      max-width: 70%;
+      height: 400px;
+      padding: 20px;
+      margin: 0 auto;
+      margin-left: 20%;
+      margin-right: 20%;
+      margin-top: 20%;
+  }
+  .grid {
+    display: grid;
+    grid-template-areas: "email localizzazione social";
+  }
+  
+  .email {
+    grid-area: email;
+    margin-left: 2%;
+  }
+  
+  .localizzazione {
+    grid-area: localizzazione;
+    margin-left: 2%;
+  }
+  
+  .social {
+    grid-area: social;
+    margin-left: 2%;
+  }
+  p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: x-large;
+    font-weight: bolder;
+  }
+  
+  img {
+    width: 250px;
+    height: 250px;
+  }
+  
+  @media (max-width: 576px) {
+    table {
+      font-size: xx-small;
+    }
+  
+    img {
+      width: 70px;
+      height: 80px;
+    }
+  
+    iframe {
+      width: 70px;
+      height: 80px;
+    }
+  
+    h1 {
+      margin-top: 15%;
+      font-size: smaller;
+    }
+  }
+  
