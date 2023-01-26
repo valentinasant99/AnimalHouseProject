@@ -1,5 +1,9 @@
 body {
-  background-color:transparent;
+  background: transparent;
+    display: block;
+    background-size: cover;
+    border-radius: 3%;
+    margin-top: 5%;
 
   }
   img {

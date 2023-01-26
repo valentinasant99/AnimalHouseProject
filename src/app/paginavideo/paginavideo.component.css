@@ -7,11 +7,12 @@ h1 {
   }
 
   body {
+    background: transparent;
     display: block;
     border-radius: 3%;
     margin-top: 5%;
     background-size: cover;
-    background-color:transparent;
+
 
   }
 

@@ -1,5 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 body{
+  background: url( "./assets/sfondo.jpg");
   background-size: cover;
-  font-family: Roboto, "Helvetica Neue", sans-serif; }
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
 
