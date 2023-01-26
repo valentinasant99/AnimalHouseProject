@@ -43,21 +43,7 @@ img {
   margin-left: 13%;
   margin-top: 5%;
 }
-
-.grid {
-  display: grid;
-  grid-template-areas: "email localizzazione social";
-}
-
-.email {
-  grid-area: email;
-  margin-left: 2%;
-}
-
-.localizzazione {
-  grid-area: localizzazione;
-  margin-left: 2%;
-}
+c
 
 .social {
   grid-area: social;
