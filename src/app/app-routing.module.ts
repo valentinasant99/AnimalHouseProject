@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ChisiamoComponent} from './chisiamo/chisiamo.component';
 import { ContattiComponent} from './contatti/contatti.component';
 import { HomepageComponent} from './homepage/homepage.component';
-import { InfoComponent} from './info/info.component';
+import { InfoComponent} from './info/component/info.component';
 import { LoginComponent} from './login/login.component';
 import { NavbarComponent} from './navbar/navbar.component';
 import { PaginavideoComponent} from './paginavideo/paginavideo.component';

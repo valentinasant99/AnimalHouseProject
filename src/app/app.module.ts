@@ -23,7 +23,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import {MatToolbar, MatToolbarModule} from "@angular/material/toolbar";
 import { FlexLayoutModule } from "@angular/flex-layout";
-import {InfoComponent} from "./info/info.component";
+import {InfoComponent} from "./info/component/info.component";
 
 @NgModule({
   declarations: [
@@ -33,7 +33,7 @@ import {InfoComponent} from "./info/info.component";
     RegistrazioneComponent,
     PaginavideoComponent,
     NavbarComponent,
-    InfoComponent
+    InfoComponent,
   ],
   imports: [
     BrowserModule,
@@ -55,6 +55,7 @@ import {InfoComponent} from "./info/info.component";
     MatToolbarModule,
     FlexLayoutModule,
   ],
+
   exports: [MatToolbarModule],
   bootstrap: [AppComponent]
 })
