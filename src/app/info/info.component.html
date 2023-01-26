@@ -1,1 +1,25 @@
+ <mat-toolbar color="primary">
+    <span>Card view demo</span>
+  </mat-toolbar>
+  <div class="content">
+    <div fxLayout="row wrap" fxLayoutGap="16px grid">
+      <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let item of [1,2,3,4,5,6,7]" >
+        <mat-card class="mat-elevation-z4">
+          <mat-card-header>
+            <mat-card-title> Registrazione </mat-card-title>
+          </mat-card-header>
+          <img mat-card-image src="assets/registrazioneAnimale.jpeg" alt="Registrazione">
+          <mat-card-content>
+            <p>La Registrazione del tuo cane e gatto sono obbligatorie</p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button type="submit">
+              <a href="https://www.comune.bologna.it/servizi-informazioni/iscrivere-cane-gatto-furetto-anagrafe">SCOPRI</a>
+            </button>
+            <button mat-button > LIKE</button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    </div>
+  </div>
 

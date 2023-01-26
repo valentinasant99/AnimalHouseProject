@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import {CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
+
 
 @Component({
   selector: 'app-info',

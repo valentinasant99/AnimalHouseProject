@@ -21,6 +21,9 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { NavbarComponent} from "./navbar/navbar.component";
 import { HttpClientModule } from '@angular/common/http';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import {MatToolbar, MatToolbarModule} from "@angular/material/toolbar";
+import { FlexLayoutModule } from "@angular/flex-layout";
+import {InfoComponent} from "./info/info.component";
 
 @NgModule({
   declarations: [
@@ -29,7 +32,8 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
     LoginComponent,
     RegistrazioneComponent,
     PaginavideoComponent,
-    NavbarComponent
+    NavbarComponent,
+    InfoComponent
   ],
   imports: [
     BrowserModule,
@@ -47,8 +51,11 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
     MatSelectModule,
     MatCheckboxModule,
     MatSidenavModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    MatToolbarModule,
+    FlexLayoutModule,
   ],
+  exports: [MatToolbarModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
