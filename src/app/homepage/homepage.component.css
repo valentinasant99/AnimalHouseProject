@@ -1,33 +1,33 @@
 .carousel-inner img {
   width: 100%;
   margin: auto;
-  min-height:150px;
+  min-height:50px;
 }
 .grid {
+  background-color: bisque;
   display: grid;
   grid-template-areas: "card1 card2 card3";
 }
 .card1 {
-  position: relative;
   grid-area: card1;
+  position: relative;
   margin-left: 20%;
-  background-color: beige;
 }
 .card2 {
   grid-area: card2;
-  margin-left: 0;
-  background-color: beige;
+  margin-left: 20%;
 }
 .card3 {
   grid-area: card3;
-  margin-left: 0;
-  background-color: beige;
+  margin-left: 20%;
 }
 
 img {
   border-radius: 0.5rem 0.5rem 0 0;
-  width: 30%;
-  height: 30%;}
+  width: 50%;
+  height: 50%;
+  margin-top: 10%;
+}
 
 .card h3 {
   margin-top: 1rem;
