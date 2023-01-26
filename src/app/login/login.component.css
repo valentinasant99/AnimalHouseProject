@@ -1,9 +1,7 @@
-body {
-    display: block;
-    border-radius: 3%;
-    margin-top: 5%;
-
+body{
+    background-color: transparent;
   }
+
   img {
     width: 50%;
     height: 50%;
