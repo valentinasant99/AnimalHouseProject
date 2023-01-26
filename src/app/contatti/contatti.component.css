@@ -9,12 +9,12 @@ body {
 {
 background-color: bisque;
 border-radius: 10%;
-  max-width: 60%;
-  height: 290px;
+  max-width: 70%;
+  height: 300px;
   padding: 20px;
 
   margin-left: 20%;
-  margin-top: 2%;
+  margin-top: 4%;
 }
 .form-signin1
 {
@@ -43,7 +43,21 @@ img {
   margin-left: 13%;
   margin-top: 5%;
 }
-c
+
+.grid {
+  display: grid;
+  grid-template-areas: "email localizzazione social";
+}
+
+.email {
+  grid-area: email;
+  margin-left: 2%;
+}
+
+.localizzazione {
+  grid-area: localizzazione;
+  margin-left: 2%;
+}
 
 .social {
   grid-area: social;
