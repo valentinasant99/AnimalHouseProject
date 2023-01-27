@@ -1,39 +1,41 @@
-<!DOCTYPE html>
-<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container">
-    <a class="navbar-brand" routerLink="/" id="brand">
-      <img src="assets/logoNavbar.png"  height="70"> Animal House
+    <a class="navbar-brand" href="#">
+      <img src="./assets/logoNavbar.png">
+      Animal House
     </a>
-  </div>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <button (click)=toggleDisplayDivIf() class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-  <div class="container justify-content-center" id="navbarText">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="#"> Gioca </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/info"> Informati </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#"> Curiosità </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/paginavideo"> Intrattenimento </a>
-      </li>
-    </ul>
-  </div>
-    <div class="container justify-content-end" id="navbarText1">
-      <ul class="navbar-nav">
-        <li class="nav-item" id="contattiNavbar">
-          <a class="nav-link" href="/contatti"> <mat-icon id="iconaLogin">email</mat-icon> Contatti </a>
+    <!-- *ngIf="!isShowDivIf" --- hide and show -->
+    <div [ngClass]="!isShowDivIf ? 'responsive__active' : 'responsive__inactive'" class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ">
+        <li (click)=toggleDisplayDivIf()  class="nav-item" routerLinkActive="active">
+          <a class="nav-link" routerLink="./paginavideo">Intrattenimento</a>
         </li>
-        <li class="nav-item">
-          <button class="btn" type="submit">
-            <a class="nav-link" href="/login"><mat-icon id="iconaLogin">account_circle</mat-icon> Login</a>
-          </button>
+        <li (click)=toggleDisplayDivIf() class="nav-item" routerLinkActive="active">
+          <a class="nav-link" routerLink="./info">Informazioni</a>
+        </li>
+        <li (click)=toggleDisplayDivIf() class="nav-item" routerLinkActive="active">
+          <a class="nav-link" routerLink="./curiosita">Curiosita'</a>
+        </li>
+        <li (click)=toggleDisplayDivIf() class="nav-item" routerLinkActive="active">
+          <a class="nav-link" routerLink="./gioco">Gioca</a>
         </li>
       </ul>
     </div>
+    <div class="d-flex">
+    <li (click)=toggleDisplayDivIf() class="nav-item" routerLinkActive="active">
+      <button>
+      <a class="nav-link" routerLink="./contatti"> Contatti</a>
+      </button>
+    </li>
+    <li (click)=toggleDisplayDivIf() class="nav-item" routerLinkActive="active">
+      <button id="bottoneLogin">
+        <a class="nav-link" routerLink="./login"> Login</a>
+      </button>
+    </li>
+    </div>
+  </div>
 </nav>

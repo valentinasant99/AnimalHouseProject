@@ -24,6 +24,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import {MatToolbar, MatToolbarModule} from "@angular/material/toolbar";
 import { FlexLayoutModule } from "@angular/flex-layout";
 import {InfoComponent} from "./info/component/info.component";
+import {CommonModule} from "@angular/common";
 
 @NgModule({
   declarations: [
@@ -53,7 +54,8 @@ import {InfoComponent} from "./info/component/info.component";
     MatSidenavModule,
     MatSlideToggleModule,
     MatToolbarModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    CommonModule
   ],
 
   exports: [MatToolbarModule],

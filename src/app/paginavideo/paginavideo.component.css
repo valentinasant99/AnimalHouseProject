@@ -11,8 +11,7 @@ h1 {
     border-radius: 3%;
     margin-top: 5%;
     background-size: cover;
-    background-color:transparent;
-
+    background:transparent;
   }
 
   .form-signin

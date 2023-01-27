@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-
 import {InfoModel} from "../models/info.model";
 import {InfoService} from "../service/info.service";
 
