@@ -32,6 +32,30 @@ export class InfoService {
         "subtitle": 'In merito all’epidemia di COVID-19, la malattia respiratoria causata dal Nuovo Coronavirus, l’Istituto Zooprofilattico Sperimentale delle Venezie risponde ',
         "link": 'https://www.izsvenezie.it/coronavirus-animali-da-compagnia/',
         "img": '../../../assets/coronaAnimali.jpg'
+      },
+      {
+        "title": 'Sistema Informativo Veterinario',
+        "subtitle": 'Il Sistema Informativo Veterinario fornisce una serie di servizi pubblici quali news, riferimenti alla normativa vigente, dati statistici ecc...',
+        "link": 'https://www.vetinfo.it/',
+        "img": '../../../assets/veterinarioAnimali.png'
+      },
+      {
+        "title": 'Pulizia Animali Domestici',
+        "subtitle": 'La pulizia degli animali domestici è fondamentale, è necessario sapere come effettuarla al fine di salvaguardare il benessere e la salute di cani e gatti. ',
+        "link": 'https://www.retecologica.it/ambiente/pulizia-degli-animali-domestici-perche-e-importante-tutte-le-info',
+        "img": '../../../assets/puliziaAnimale.jpg'
+      },
+      {
+        "title": 'Trasporto Animali Domestici',
+        "subtitle": 'Scopri tutto quello che c\'è da sapere sulla protezione, la tutela e la sicurezzae dei trasporti nazionali ed internazionali dei nostri amici a 4 zampe.',
+        "link": 'https://www.homeboardingshippingpets.com/servizi/',
+        "img": '../../../assets/trasportoAnimali.jpeg'
+      },
+      {
+        "title": 'Terapia: Pet therapy',
+        "subtitle": 'Che cosa si intende per pet-therapy? Il termine è stato coniato da Boris M. Levinson e si riferisce all’impiego degli animali da compagnia per curare specifiche malattie.',
+        "link": 'https://www.issalute.it/index.php/la-salute-dalla-a-alla-z-menu/p/pet-therapy',
+        "img": '../../../assets/terapiaAnimale.jpg'
       }
       ]
   }
