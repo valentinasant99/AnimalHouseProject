@@ -1,26 +1,40 @@
-button{
+.container{
+  margin-left: 5px;
+  margin-right: 5px;
+}
+img{
+  width: 60px;
+  height: 60px;
+}
+
+
+a{
+  font-size: 14pt;
   color: white;
+}
+
+a:hover{
+  color:white;
+}
+
+.navbar-brand{
+  font-size: 20pt;
+}
+
+.d-flex{
+  margin-left: 77%;
+  margin-bottom: 18px;
+}
+
+button{
+  background: transparent;
   border-color: white;
-  font: 20px Arial, Helvetica, sans-serif;
 }
 
 button:hover{
   background: darkgoldenrod;
 }
 
-#navbarText, #navbarText1{
-  font: 20px Arial, Helvetica, sans-serif;
-}
-
-#brand{
-  font-size: 30px;
-}
-
-#iconaLogin{
-  padding-top: 4px;
-
-}
-
-#contattiNavbar{
-  padding-top: 6px;
+#bottoneLogin{
+  margin-left:8px;
 }

@@ -9,7 +9,11 @@ export class NavbarComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  isShowDivIf = true;
+  toggleDisplayDivIf() {
+    this.isShowDivIf = !this.isShowDivIf;
   }
+
+  ngOnInit(): void {}
 
 }
