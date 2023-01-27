@@ -86,3 +86,10 @@ h1 {
       font-size: smaller;
     }
   }
+
+mat-toolbar{
+  background-color: bisque;
+  font-size: 24pt;
+  color: #865306;
+  padding-left: 35%;
+}
