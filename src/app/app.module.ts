@@ -24,6 +24,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import {MatToolbar, MatToolbarModule} from "@angular/material/toolbar";
 import { FlexLayoutModule } from "@angular/flex-layout";
 import {InfoComponent} from "./info/component/info.component";
+import {CuriositaComponent } from './curiosita/component/curiosita.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import {InfoComponent} from "./info/component/info.component";
     PaginavideoComponent,
     NavbarComponent,
     InfoComponent,
+    CuriositaComponent,
   ],
   imports: [
     BrowserModule,
