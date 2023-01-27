@@ -7,6 +7,7 @@ import { LoginComponent} from './login/login.component';
 import { NavbarComponent} from './navbar/navbar.component';
 import { PaginavideoComponent} from './paginavideo/paginavideo.component';
 import { RegistrazioneComponent} from './registrazione/registrazione.component';
+import { CuriositaComponent} from './curiosita/component/curiosita.component';
 
 
 const routes: Routes = [
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: '', component: HomepageComponent },
   { path: 'info', component: InfoComponent },
   { path: 'login', component: LoginComponent },
+  { path: 'curiosita', component: CuriositaComponent},
 
 
 

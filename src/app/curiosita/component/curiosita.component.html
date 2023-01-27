@@ -1,0 +1,18 @@
+<div class="content">
+  <h1> <b>Curiosità mondo animale</b></h1>
+</div>
+<div class="content">
+  <div fxLayout="row wrap" fxLayoutGap="16px grid">
+    <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let info of info" >
+      <mat-card id="cardAnimal" class="mat-elevation-z4">
+        <mat-card-header>
+          <mat-card-title> {{info.title}} </mat-card-title>
+        </mat-card-header>
+        <img mat-card-image  src="{{info.img}}" alt="Registrazione">
+        <mat-card-content>
+          <p> {{info.subtitle}}</p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</div>
