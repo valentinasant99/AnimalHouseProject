@@ -1,0 +1,17 @@
+<mat-toolbar>
+  <span> Guarda questi video...</span>
+</mat-toolbar>
+<div class="content">
+  <div fxLayout="row wrap" fxLayoutGap="16px grid">
+    <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let info of info" >
+      <mat-card id="cardAnimal" class="mat-elevation-z4">
+        <mat-card-header>
+          <mat-card-title> {{info.title}} </mat-card-title>
+        </mat-card-header>
+        <mat-card-actions>
+          <iframe width="560" height="315" src="{{info.link}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+</div>

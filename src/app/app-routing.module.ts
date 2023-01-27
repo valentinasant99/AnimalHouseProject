@@ -5,7 +5,7 @@ import { HomepageComponent} from './homepage/homepage.component';
 import { InfoComponent} from './info/component/info.component';
 import { LoginComponent} from './login/login.component';
 import { NavbarComponent} from './navbar/navbar.component';
-import { PaginavideoComponent} from './paginavideo/paginavideo.component';
+import { PaginavideoComponent} from './paginavideo/component/paginavideo.component';
 import { RegistrazioneComponent} from './registrazione/registrazione.component';
 import { CuriositaComponent} from './curiosita/component/curiosita.component';
 

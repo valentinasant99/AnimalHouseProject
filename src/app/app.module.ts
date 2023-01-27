@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { ContattiComponent } from './contatti/contatti.component';
 import { LoginComponent } from './login/login.component';
 import { RegistrazioneComponent } from './registrazione/registrazione.component';
-import { PaginavideoComponent } from './paginavideo/paginavideo.component';
+import { PaginavideoComponent } from './paginavideo/component/paginavideo.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
@@ -24,6 +24,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import {MatToolbar, MatToolbarModule} from "@angular/material/toolbar";
 import { FlexLayoutModule } from "@angular/flex-layout";
 import {InfoComponent} from "./info/component/info.component";
+import {CuriositaComponent} from "./curiosita/component/curiosita.component";
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import {InfoComponent} from "./info/component/info.component";
     PaginavideoComponent,
     NavbarComponent,
     InfoComponent,
+    CuriositaComponent
   ],
   imports: [
     BrowserModule,
