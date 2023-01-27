@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {InfoModel} from "../models/curiosita.model";
+import {CuriositaModel} from "../models/curiosita.model";
 import {InfoService} from "../service/curiosita.service";
 
 @Component({
@@ -9,7 +9,7 @@ import {InfoService} from "../service/curiosita.service";
   providers: [InfoService]
 })
 export class CuriositaComponent implements OnInit {
-  public info:InfoModel[]=[];
+  public info:CuriositaModel[]=[];
   constructor(public infoService:InfoService) {
 
   }
