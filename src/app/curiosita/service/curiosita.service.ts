@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {InfoModel} from "../models/curiosita.model";
+import {CuriositaModel} from "../models/curiosita.model";
 
 @Injectable(
 
@@ -7,7 +7,7 @@ import {InfoModel} from "../models/curiosita.model";
 export class InfoService {
 
   constructor() {}
-  public getInfo():InfoModel[]{
+  public getInfo():CuriositaModel[]{
     return [
       {
         "title": 'La vista dei cani',
