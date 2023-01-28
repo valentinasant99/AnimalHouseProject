@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+  <title>Homepage</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<button id="Logout" mat-raised-button="succes" routerLink="/login">Logout</button>
+<title>Bacheca</title>
+<body>
+<h1>Bacheca</h1>
+<form action="upload.php" method="post" enctype="multipart/form-data">
+  <label for="file">Scegli una foto:</label>
+  <input type="file" name="file" id="file"><br><br>
+  <label for="caption">Scrivi una didascalia:</label>
+  <input type="text" name="caption" id="caption"><br><br>
+  <input type="submit" value="Pubblica"> </form>
+<div id="posts">
+</div>
+</body>
+
+
