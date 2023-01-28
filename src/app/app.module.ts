@@ -26,6 +26,7 @@ import { FlexLayoutModule } from "@angular/flex-layout";
 import {InfoComponent} from "./info/component/info.component";
 import {CuriositaComponent} from "./curiosita/component/curiosita.component";
 
+
 @NgModule({
   declarations: [
     AppComponent,

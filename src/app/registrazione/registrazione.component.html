@@ -1,23 +1,22 @@
-<!DOCTYPE html>
-<body>
-<form class="form-signin">
-    <img src="assets/login.png">
-    <div>
-      <p>Inserisci i tuoi dati</p>
-      <input type="text" class="form-control" placeholder="NomeUtente" required autofocus>
-    </div>
-    <div>
-      <input type="text" class="form-control" placeholder="Animale preferito" required autofocus>
-    </div>
-              <div>
-                <input type="text" class="form-control" placeholder="Email" required autofocus>
-              </div>
-                <div>
-                <input type="password" class="form-control" placeholder="Password" required>
-                </div>
-                <div>
-                <button type="submit">Invia</button>
-                </div>
-                <p>Se hai già un account <a href="/login" >clicca qui</a></p>
-    </form>
-</body>
+
+<div class="form-container">
+
+  <form [formGroup]="RegistrazioneForm" (ngSubmit)="onSubmit()">
+    <img src="assets/login.png" class="logo">
+    <h2>Inserisci i tuoi dati</h2>
+    <div class="form-group">
+      <label for="username">Nome utente</label>
+      <input formControlName="username" type="text" id="username" placeholder="Inserisci il tuo nome utente" required autofocus></div>
+    <div class="form-group">
+      <label for="animale">Animale preferito</label>
+      <input formControlName="animale" type="text" id="animale" placeholder="Inserisci il tuo animale preferito" required></div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input formControlName="email" type="email" id="email" placeholder="Inserisci la tua email" required></div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input formControlName="password" type="password" id="password" placeholder="Inserisci la tua password" required></div>
+    <button type="submit" [disabled]="!RegistrazioneForm.valid">Accedi</button>
+    <p> hai già un account? <a routerLink="/login">Login</a></p>
+  </form>
+</div>
