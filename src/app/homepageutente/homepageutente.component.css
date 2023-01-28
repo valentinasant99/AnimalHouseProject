@@ -4,6 +4,7 @@ body {
   font-size: 16px;
   line-height: 1.6;
   color: #333333;
+  background: transparent;
 }
 
 /* Imposta lo stile per l'intestazione h1 */
@@ -15,9 +16,16 @@ h1 {
 
 /* Imposta lo stile per il form */
 form {
-  width: 500px;
+  width: 60%;
   margin: 0 auto;
+  margin-top: 5%;
   text-align: left;
+  background-color: bisque;
+  border-radius: 3%;
+  padding-right: 5%;
+  padding-left: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 
 /* Imposta lo stile per i label */
@@ -32,21 +40,66 @@ input[type="text"], input[type="file"] {
   width: 100%;
   padding: 10px;
   margin-bottom: 20px;
-  border: 1px solid #cccccc;
+  border: 1px solid #865306;
   box-sizing: border-box;
 }
 
 /* Imposta lo stile per il bottone di invio */
 input[type="submit"] {
-  background-color: #4CAF50;
   color: white;
   padding: 12px 20px;
   border: none;
   cursor: pointer;
+  background-color: #865306;
 }
 
 /* Imposta lo stile per il div dei post */
 #posts {
   width: 500px;
   margin: 20px auto;
+}
+
+
+.example-card {
+  width: 600px;
+  margin: 20px;
+  height: 600px;
+  background-color: antiquewhite;
+  text-align: center;
+}
+
+.mat-card-subtitle {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #2a913355;
+  margin-left: 30px;
+}
+
+.mat-card-title {
+  color: darkgreen;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.like {
+  color: goldenrod
+}
+
+
+
+.like:hover {
+  color: red;
+}
+
+
+
+h1 {
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: xx-large;
+  font-weight: bolder;
 }

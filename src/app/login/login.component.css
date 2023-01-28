@@ -1,10 +1,7 @@
-body {
-  background: transparent;
-    display: block;
-    border-radius: 3%;
-    margin-top: 5%;
-
+  body{
+    background: transparent;
   }
+
   img {
     width: 50%;
     height: 50%;

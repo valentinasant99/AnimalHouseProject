@@ -8,14 +8,36 @@
 <button id="Logout" mat-raised-button="succes" routerLink="/login">Logout</button>
 <title>Bacheca</title>
 <body>
-<h1>Bacheca</h1>
 <form action="upload.php" method="post" enctype="multipart/form-data">
+  <h1>Bacheca</h1>
   <label for="file">Scegli una foto:</label>
   <input type="file" name="file" id="file"><br><br>
   <label for="caption">Scrivi una didascalia:</label>
   <input type="text" name="caption" id="caption"><br><br>
   <input type="submit" value="Pubblica"> </form>
 <div id="posts">
+</div>
+
+<div id="card">
+  <mat-card class="example-card">
+    <mat-card-header>
+      <mat-card-title><mat-icon id="icona">account_circle</mat-icon>  </mat-card-title>
+      <mat-card-subtitle>Author</mat-card-subtitle>
+    </mat-card-header>
+    <div id="divFoto">
+      <img id="foto" mat-card-image src=" " alt="Photo of a Shiba Inu">
+    </div>
+    <mat-card-content>
+      <p id="titolo">
+
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <mat-icon aria-hidden="false" fontIcon="favorite" class="like">
+      </mat-icon>
+      <label>LIKE</label>
+    </mat-card-actions>
+  </mat-card>
 </div>
 </body>
 
