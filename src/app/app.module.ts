@@ -25,6 +25,7 @@ import {MatToolbar, MatToolbarModule} from "@angular/material/toolbar";
 import { FlexLayoutModule } from "@angular/flex-layout";
 import {InfoComponent} from "./info/component/info.component";
 import {CuriositaComponent} from "./curiosita/component/curiosita.component";
+import { HomepageutenteComponent } from './homepageutente/homepageutente.component';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import {CuriositaComponent} from "./curiosita/component/curiosita.component";
     PaginavideoComponent,
     NavbarComponent,
     InfoComponent,
-    CuriositaComponent
+    CuriositaComponent,
+    HomepageutenteComponent
   ],
   imports: [
     BrowserModule,

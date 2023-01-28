@@ -8,7 +8,7 @@ import { NavbarComponent} from './navbar/navbar.component';
 import { PaginavideoComponent} from './paginavideo/component/paginavideo.component';
 import { RegistrazioneComponent} from './registrazione/registrazione.component';
 import { CuriositaComponent} from './curiosita/component/curiosita.component';
-
+import { HomepageutenteComponent} from './homepageutente/homepageutente.component';
 
 const routes: Routes = [
   { path: 'contatti', component: ContattiComponent },
@@ -18,7 +18,7 @@ const routes: Routes = [
   { path: 'info', component: InfoComponent },
   { path: 'login', component: LoginComponent },
   { path: 'curiosita', component: CuriositaComponent},
-
+  { path: 'homepageutente', component: HomepageutenteComponent}
 
 
 ];
