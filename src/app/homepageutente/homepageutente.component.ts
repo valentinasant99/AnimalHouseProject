@@ -7,8 +7,14 @@ import { Component, OnInit} from '@angular/core';
 })
 export class HomepageutenteComponent implements OnInit{
 
-  constructor() { }
-  ngOnInit(): void {
-  }
-}
 
+  constructor() { }
+
+  isShowDivIf = true;
+  toggleDisplayDivIf() {
+    this.isShowDivIf = !this.isShowDivIf;
+  }
+
+  ngOnInit(): void {}
+
+}
