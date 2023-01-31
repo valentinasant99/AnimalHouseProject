@@ -1,0 +1,25 @@
+<div class="container">
+  <form [formGroup]="signupForm" (ngSubmit)="signUp()">
+    <h3>Registrazione</h3>
+    <div class="form-group">
+      <label>Nome utente: </label>
+      <input type="text" formControlName="nomeutente" class="form-control mb-3 mt-3" placeholder="Inserisci nome utente"/>
+    </div>
+    <div class="form-group">
+      <label>Animale preferito:</label>
+      <input type="text" formControlName="animale" class="form-control mb-3 mt-3" placeholder="Inserisci animale preferito"/>
+    </div>
+    <div class="form-group">
+      <label>Email utente: </label>
+      <input type="text" formControlName="email" class="form-control mb-3 mt-3" placeholder="Inserisci email"/>
+    </div>
+    <div class="form-group">
+      <label>Password: </label>
+      <input type="text" formControlName="password" class="form-control mb-3 mt-3" placeholder="Inserisci password"/>
+    </div>
+
+    <span>Hai già un account?<a routerLink="login">Loggati</a></span>
+    <br/>
+    <button type="submit" class="btn btn-success">Registrati</button>
+  </form>
+</div>
