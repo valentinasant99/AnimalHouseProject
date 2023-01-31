@@ -5,7 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-<button id="Logout" mat-raised-button="succes" routerLink="/login">Logout</button>
+<div class="d-flex">
+  <li (click)=toggleDisplayDivIf() class="nav-item" routerLinkActive="active">
+    <button id="bottoneLeaderboard">
+      <a class="nav-link" routerLink="./login"> Leaderboard</a>
+    </button>
+  </li>
+  <li (click)=toggleDisplayDivIf() class="nav-item" routerLinkActive="active">
+    <button id="bottoneServizi">
+      <a class="nav-link" routerLink="./login"> Servizi</a>
+    </button>
+  </li>
+  <li (click)=toggleDisplayDivIf() class="nav-item" routerLinkActive="active">
+    <button id="bottoneLogout">
+      <a class="nav-link" routerLink="./login"> Logout</a>
+    </button>
+  </li>
+</div>
 <title>Bacheca</title>
 <body>
 <form action="upload.php" method="post" enctype="multipart/form-data">
