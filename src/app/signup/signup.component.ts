@@ -22,14 +22,14 @@ export class SignupComponent implements OnInit{
 
     })
   }
-signUp(){
+  signUp(){
     this.http.post<any>("http://localhost:3000/signup", this.signupForm.value)
       .subscribe(res=>{
-      alert("registrazione avvenuta con successo");
-      this.signupForm.reset();
-      this.router.navigate(['login']);
-  }, err=>{
-      alert("Qualcosa è andato storto");
-  })
-}
+        alert("registrazione avvenuta con successo");
+        this.signupForm.reset();
+        this.router.navigate(['login']);
+      }, err=>{
+        alert("Qualcosa è andato storto");
+      })
+  }
 }
