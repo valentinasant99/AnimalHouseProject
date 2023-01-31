@@ -1,4 +1,21 @@
 {
-  "signup": [
-  ]
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "signupUsers": [
+    {
+      "nomeutente": "vale",
+      "animale": "gatto",
+      "email": "vale@gmail.com",
+      "password": "ciao",
+      "id": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
 }

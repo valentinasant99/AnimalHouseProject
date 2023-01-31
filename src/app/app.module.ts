@@ -4,7 +4,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ContattiComponent } from './contatti/contatti.component';
 import { LoginComponent } from './login/login.component';
-import { RegistrazioneComponent } from './registrazione/registrazione.component';
+import { SignupComponent } from './signup/signup.component';
 import { PaginavideoComponent } from './paginavideo/component/paginavideo.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
@@ -26,6 +26,7 @@ import { FlexLayoutModule } from "@angular/flex-layout";
 import {InfoComponent} from "./info/component/info.component";
 import {CuriositaComponent} from "./curiosita/component/curiosita.component";
 import { HomepageutenteComponent } from './homepageutente/homepageutente.component';
+import { QuizComponent } from './quiz/quiz.component';
 
 
 @NgModule({
@@ -33,12 +34,13 @@ import { HomepageutenteComponent } from './homepageutente/homepageutente.compone
     AppComponent,
     ContattiComponent,
     LoginComponent,
-    RegistrazioneComponent,
+    SignupComponent,
     PaginavideoComponent,
     NavbarComponent,
     InfoComponent,
     CuriositaComponent,
-    HomepageutenteComponent
+    HomepageutenteComponent,
+    QuizComponent
   ],
   imports: [
     BrowserModule,
