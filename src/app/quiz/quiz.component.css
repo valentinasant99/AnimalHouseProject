@@ -1,0 +1,115 @@
+img {
+  width: 400px;
+  height: 400px;
+}
+
+body {
+  border-radius: 5%;
+  margin-top: 5%;
+  background: bisque;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+section{
+  margin-left: 10%;
+}
+
+
+h1{
+  text-align: center;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: xx-large;
+  padding-top: 2%;
+}
+
+.domande {
+  column-count: 2;
+}
+
+li {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  margin-top: 3%;
+}
+
+button {
+  color: #865306;
+  margin-right: 2%;
+  margin-bottom: 5%;
+  margin-top: 3%;
+  gap: normal;
+  border-color: transparent;
+}
+
+#punteggio{
+  text-align: right;
+  margin-right: 5%;
+  font-size: 14pt;
+  color: #865306;
+}
+
+h3{
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: large;
+}
+
+p {
+  font-weight: bolder;
+}
+
+mat-radio-button {
+  margin-left: 16px;
+}
+
+
+#logout,
+#home {
+  margin-top: 1%;
+
+  display: float;
+
+  float: right;
+
+  width: 10%;
+
+  height: 8%;
+
+  margin-right: 5%;
+
+  background-color: #45464569;
+
+  color: black;
+
+}
+
+
+
+@media (max-width: 576px) {
+  body {
+    font-size: xx-small;
+    padding: 10%;
+  }
+
+  .domande {
+    margin-left: -2%;
+  }
+
+  button {
+    width: 45%;
+    height: 20%;
+    font-size: small;
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+  }
+
+  #score {
+    margin-left: 20%;
+  }
+
+  #logout,
+  #home {
+    width: 12%;
+    height: 6%;
+  }
+}
