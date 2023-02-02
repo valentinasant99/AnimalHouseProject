@@ -1,10 +1,13 @@
 .content{
-  padding: 16px;
+  width: 100%;
+
+  padding: 2px;
 
 }
 
 #cardAnimal {
   margin-top: 40px;
+  height: 100%;
   background-color: bisque;
 }
 

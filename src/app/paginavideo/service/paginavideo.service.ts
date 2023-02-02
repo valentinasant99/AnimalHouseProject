@@ -11,6 +11,10 @@ export class InfoService{
     return [
       {
         "title": 'Qualcosa',
+        "link": '"https://www.youtube.com/embed/50RtfRYUMak"'
+      },
+      {
+        "title": 'Qualcosa',
         "link": 'https://www.youtube.com/embed/cxpXsYCe7Dk'
       },
       {

@@ -8,8 +8,8 @@ import { NavbarComponent} from './navbar/navbar.component';
 import { PaginavideoComponent} from './paginavideo/component/paginavideo.component';
 import { CuriositaComponent} from './curiosita/component/curiosita.component';
 import { HomepageutenteComponent} from './homepageutente/homepageutente.component';
+import {QuizComponent} from "./quiz/quiz.component";
 import {SignupComponent} from "./signup/signup.component";
-import {ServizipresenzaComponent} from "./servizipresenza/component/servizipresenza.component";
 
 const routes: Routes = [
   { path: 'contatti', component: ContattiComponent },
@@ -20,8 +20,9 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'curiosita', component: CuriositaComponent},
   { path: 'homepageutente', component: HomepageutenteComponent},
-  {redirectTo:'', path:'login', pathMatch:'full'},
-  { path: 'servizipresenza', component: ServizipresenzaComponent},
+  { path: 'quiz', component: QuizComponent},
+  {redirectTo:'', path:'login', pathMatch:'full'}
+
 
 ];
 
