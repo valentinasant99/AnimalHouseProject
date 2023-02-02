@@ -1,0 +1,38 @@
+.content {
+  padding: 16px;
+
+}
+
+#cardAnimal {
+  margin-top: 40px;
+  background-color: bisque;
+}
+
+
+p{
+  font-size: 12pt;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+a{
+  color: #865306;
+}
+
+mat-toolbar{
+  background-color: bisque;
+  font-size: 24pt;
+  color: #865306;
+  padding-left: 35%;
+}
+
+.bottonecard{
+  background-color: #865306;
+  border: none;
+  color: white;
+  padding: 25px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5%;
+}

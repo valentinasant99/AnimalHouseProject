@@ -1,0 +1,27 @@
+<!-- appointment-form.component.html -->
+<h1>Book Appointment</h1>
+<form>
+  <div>
+    <label for="date">Date:</label>
+    <input type="date" id="date" [(ngModel)]="appointment.date" name="date" required>
+  </div>
+  <div>
+    <label for="time">Time:</label>
+    <input type="time" id="time" [(ngModel)]="appointment.time" name="time" required>
+  </div>
+  <div>
+    <label for="name">Name:</label>
+    <input type="text" id="name" [(ngModel)]="appointment.name" name="name" required>
+  </div>
+  <div>
+    <label for="animal">Animal:</label>
+    <input type="text" id="animal" [(ngModel)]="appointment.animal" name="animal" required>
+  </div>
+  <div>
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" [(ngModel)]="appointment.phone" name="phone" required>
+  </div>
+  <div>
+    <button (click)="bookAppointment()">Book Appointment</button>
+  </div>
+</form>

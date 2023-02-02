@@ -26,7 +26,8 @@ import { FlexLayoutModule } from "@angular/flex-layout";
 import {InfoComponent} from "./info/component/info.component";
 import {CuriositaComponent} from "./curiosita/component/curiosita.component";
 import { HomepageutenteComponent } from './homepageutente/homepageutente.component';
-import { QuizComponent } from './quiz/quiz.component';
+import { ServizipresenzaComponent } from './servizipresenza/component/servizipresenza.component';
+import { VeterinarioComponent } from './veterinario/veterinario.component';
 
 
 @NgModule({
@@ -40,7 +41,8 @@ import { QuizComponent } from './quiz/quiz.component';
     InfoComponent,
     CuriositaComponent,
     HomepageutenteComponent,
-    QuizComponent
+    ServizipresenzaComponent,
+    VeterinarioComponent
   ],
   imports: [
     BrowserModule,

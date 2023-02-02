@@ -13,6 +13,13 @@
       "email": "vale@gmail.com",
       "password": "ciao",
       "id": 1
+    },
+    {
+      "nomeutente": "Ale",
+      "animale": "cane",
+      "email": "alessiatasca@gmail.com",
+      "password": "Alessia2000",
+      "id": 2
     }
   ],
   "profile": {
