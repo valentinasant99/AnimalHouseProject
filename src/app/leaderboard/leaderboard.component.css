@@ -1,0 +1,81 @@
+body {
+  background: transparent;
+}
+.form-signin1
+{
+  background-color: bisque;
+  border-radius: 10%;
+  max-width: 60%;
+  height: 420px;
+  margin-right: 10%;
+  margin-left: 20%;
+  margin-top: 0%;
+}
+
+h1 {
+  margin-bottom: 5%;
+  margin-top: 15%;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: xx-large;
+  font-weight: bolder;
+}
+
+table {
+  text-align: center;
+  align-items: center;
+  width: 60%;
+  border-collapse: separate;
+  margin-left: 20%;
+  border-color: #333333;
+}
+
+thead {
+  background-color: black;
+  color: white;
+}
+
+th {
+  padding: 15px;
+}
+
+td {
+  padding: 15px;
+  background-color: darkseagreen;
+  border-collapse: separate;
+}
+
+tr {
+  border-spacing: 1em;
+  border-collapse: separate;
+}
+
+#logout,
+#home {
+  display: float;
+  float: right;
+  width: 10%;
+  height: 8%;
+  margin-right: 5%;
+  background-color: #45464569;
+  color: black;
+}
+
+.d-flex{
+  margin-left: 90%;
+  margin-bottom: 18px;
+  margin-top: 2%;
+}
+
+button{
+  background-color: darkgoldenrod;
+  border-color: darkgoldenrod;
+}
+
+@media (max-width: 576px) {
+
+  #logout,
+  #home {
+    margin-top: 8%;
+  }
+}
