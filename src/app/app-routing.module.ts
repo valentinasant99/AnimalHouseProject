@@ -8,9 +8,10 @@ import { NavbarComponent} from './navbar/navbar.component';
 import { PaginavideoComponent} from './paginavideo/component/paginavideo.component';
 import { CuriositaComponent} from './curiosita/component/curiosita.component';
 import { HomepageutenteComponent} from './homepageutente/homepageutente.component';
-import {QuizComponent} from "./quiz/quiz.component";
+import { LeaderboardComponent} from './leaderboard/leaderboard.component';
 import {SignupComponent} from "./signup/signup.component";
-
+import {ServizipresenzaComponent} from "./servizipresenza/component/servizipresenza.component";
+import {VeterinarioComponent} from "./veterinario/veterinario.component";
 const routes: Routes = [
   { path: 'contatti', component: ContattiComponent },
   { path: 'signup', component: SignupComponent },
@@ -20,7 +21,9 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'curiosita', component: CuriositaComponent},
   { path: 'homepageutente', component: HomepageutenteComponent},
-  { path: 'quiz', component: QuizComponent},
+  { path: 'leaderboard', component: LeaderboardComponent},
+  { path: 'servizipresenza', component: ServizipresenzaComponent},
+  { path: 'veterinario', component: VeterinarioComponent},
   {redirectTo:'', path:'login', pathMatch:'full'}
 
 

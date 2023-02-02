@@ -14,7 +14,7 @@ export class InfoService {
         "subtitle": 'Affidarsi ad uno Studio Veterinario e ad un medico competente e soprattutto bravo è un fattore determinante per il benessere del tuo animale, ' +
           'offrendogli una qualità di vita migliore. L\'utilizzo della nostra applicazione Kpet ti permette di contattare un veterinario online in maniera pratica e diretta. ' +
           'Infatti potrai trovare un ambulatorio veterinario e fissare un appuntamento semplicemente con un click.',
-        "link": '/veterinario',
+        "link": './veterinario',
         "img": '../../../assets/veterinario.jpg'
       },
       {
