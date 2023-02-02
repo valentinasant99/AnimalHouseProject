@@ -1,27 +1,30 @@
-<!-- appointment-form.component.html -->
-<h1>Book Appointment</h1>
-<form>
+<form [formGroup]="appointmentForm" (ngSubmit)="onSubmit()">
+  <h2>Prenota il tuo appuntamento</h2>
   <div>
-    <label for="date">Date:</label>
-    <input type="date" id="date" [(ngModel)]="appointment.date" name="date" required>
+    <label>Nome e Cognome cliente:</label>
+    <input type="text" formControlName="nomeutente"/>
   </div>
   <div>
-    <label for="time">Time:</label>
-    <input type="time" id="time" [(ngModel)]="appointment.time" name="time" required>
+    <label>Numero Telefono:</label>
+    <input type="text" formControlName="telefono"/>
   </div>
   <div>
-    <label for="name">Name:</label>
-    <input type="text" id="name" [(ngModel)]="appointment.name" name="name" required>
+    <label>Giorno:</label>
+    <select formControlName="date">
+      <option *ngFor="let date of availableDates" [value]="date">{{date}}</option>
+    </select>
   </div>
   <div>
-    <label for="animal">Animal:</label>
-    <input type="text" id="animal" [(ngModel)]="appointment.animal" name="animal" required>
+    <label>Mese:</label>
+    <select formControlName="month">
+      <option *ngFor="let month of availableMonths" [value]="month">{{month}}</option>
+    </select>
   </div>
   <div>
-    <label for="phone">Phone:</label>
-    <input type="tel" id="phone" [(ngModel)]="appointment.phone" name="phone" required>
+    <label>Orario:</label>
+    <select formControlName="time">
+      <option *ngFor="let time of availableTimes" [value]="time">{{time}}</option>
+    </select>
   </div>
-  <div>
-    <button (click)="bookAppointment()">Book Appointment</button>
-  </div>
-</form>
+  <button type="submit">Prenota</button>
+  </form>

@@ -28,6 +28,8 @@ import { HomepageutenteComponent } from './homepageutente/homepageutente.compone
 import {SignupComponent} from "./signup/signup.component";
 import {ServizipresenzaComponent} from "./servizipresenza/component/servizipresenza.component";
 import {VeterinarioComponent} from "./veterinario/veterinario.component";
+import {LeaderboardComponent} from "./leaderboard/leaderboard.component";
+
 
 @NgModule({
   declarations: [
@@ -42,6 +44,8 @@ import {VeterinarioComponent} from "./veterinario/veterinario.component";
     HomepageutenteComponent,
     ServizipresenzaComponent,
     VeterinarioComponent,
+    LeaderboardComponent,
+
 
   ],
   imports: [
@@ -62,7 +66,8 @@ import {VeterinarioComponent} from "./veterinario/veterinario.component";
     MatSidenavModule,
     MatSlideToggleModule,
     MatToolbarModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    ReactiveFormsModule,
   ],
 
   exports: [MatToolbarModule],

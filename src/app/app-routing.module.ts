@@ -12,6 +12,7 @@ import { LeaderboardComponent} from './leaderboard/leaderboard.component';
 import {SignupComponent} from "./signup/signup.component";
 import {ServizipresenzaComponent} from "./servizipresenza/component/servizipresenza.component";
 import {VeterinarioComponent} from "./veterinario/veterinario.component";
+
 const routes: Routes = [
   { path: 'contatti', component: ContattiComponent },
   { path: 'signup', component: SignupComponent },
