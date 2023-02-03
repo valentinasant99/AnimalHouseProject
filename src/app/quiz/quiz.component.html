@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<body>
+<!--<button id="logout" mat-raised-button color="success" [disabled]="disabilita" (click)="this.authService.logout()">
+        routerLink="/login"> Logout</button> -->
+<section class="quiz">
+  <h1>Gioca al nostro super quiz!</h1>
+  <h3>Quanto te ne intendi di animali? Scoprilo insieme a noi!</h3>
+  <div class="domande">
+    <ul>
+      <div *ngFor="let dato of domande">
+        <li>{{dato}}</li>
+        <mat-radio-group aria-label="Select an option" [(ngModel)]="selectedOption[dato]">
+          <mat-radio-button color="primary" value="True">TRUE</mat-radio-button>
+          <mat-radio-button color="primary" value="False"> FALSE</mat-radio-button>
+          <p>Hai selezionato : {{selectedOption[dato]}}</p>
+        </mat-radio-group>
+      </div>
+    </ul>
+  </div>
+  <div id="score">
+    <p id="punteggio">Il tuo punteggio è: {{punteggio}}</p>
+    <button (click)="azzeraQuiz();" mat-raised-button> Gioca</button>
+    <button (click)="controllaRisposte()" mat-raised-button> Invia </button>
+  </div>
+</section>
+</body>

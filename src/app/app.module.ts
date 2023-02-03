@@ -4,6 +4,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ContattiComponent } from './contatti/contatti.component';
 import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
 import { PaginavideoComponent } from './paginavideo/component/paginavideo.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
@@ -25,10 +26,10 @@ import { FlexLayoutModule } from "@angular/flex-layout";
 import {InfoComponent} from "./info/component/info.component";
 import {CuriositaComponent} from "./curiosita/component/curiosita.component";
 import { HomepageutenteComponent } from './homepageutente/homepageutente.component';
-import {SignupComponent} from "./signup/signup.component";
 import {ServizipresenzaComponent} from "./servizipresenza/component/servizipresenza.component";
 import {VeterinarioComponent} from "./veterinario/veterinario.component";
 import {LeaderboardComponent} from "./leaderboard/leaderboard.component";
+import {QuizComponent} from "./quiz/quiz.component";
 
 
 @NgModule({
@@ -42,11 +43,10 @@ import {LeaderboardComponent} from "./leaderboard/leaderboard.component";
     InfoComponent,
     CuriositaComponent,
     HomepageutenteComponent,
+    QuizComponent,
     ServizipresenzaComponent,
     VeterinarioComponent,
-    LeaderboardComponent,
-
-
+    LeaderboardComponent
   ],
   imports: [
     BrowserModule,
@@ -66,8 +66,7 @@ import {LeaderboardComponent} from "./leaderboard/leaderboard.component";
     MatSidenavModule,
     MatSlideToggleModule,
     MatToolbarModule,
-    FlexLayoutModule,
-    ReactiveFormsModule,
+    FlexLayoutModule
   ],
 
   exports: [MatToolbarModule],
