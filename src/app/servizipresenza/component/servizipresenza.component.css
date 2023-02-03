@@ -1,5 +1,6 @@
 .content {
   padding: 16px;
+  margin-top: 1%;
 
 }
 
@@ -8,6 +9,23 @@
   background-color: bisque;
 }
 
+.d-flex{
+  margin-left: 65%;
+  margin-bottom: 18px;
+}
+
+button{
+  background-color: darkgoldenrod;
+  border-color: darkgoldenrod;
+}
+
+a:hover{
+  color: white;
+}
+
+#bottoneservizi{
+  margin-left:250%;
+}
 
 p{
   font-size: 12pt;

@@ -10,8 +10,11 @@ import {InfoService} from "../service/servizipresenza.service";
 })
 export class ServizipresenzaComponent implements OnInit {
   public info:ServizipresenzaModel[]=[];
-  constructor(public infoService:InfoService) {
+  constructor(public infoService:InfoService) {}
 
+  isShowDivIf = true;
+  toggleDisplayDivIf() {
+    this.isShowDivIf = !this.isShowDivIf;
   }
 
   ngOnInit(): void {
