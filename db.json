@@ -8,12 +8,18 @@
   ],
   "signupUsers": [
     {
-      "nomeutente": "Vale",
+      "nomeutente": "vale",
+      "animale": "gatto",
       "email": "vale@gmail.com",
       "password": "ciao",
-      "punteggio": "",
-      "animale": "gatto",
-      "id": 3
+      "id": 1
+    },
+    {
+      "nomeutente": "Ale",
+      "animale": "cane",
+      "email": "alessiatasca@gmail.com",
+      "password": "Alessia2000",
+      "id": 2
     }
   ],
   "Veterinario": [
@@ -89,6 +95,14 @@
       "time": "11:00",
       "id": 9
     }
+  ],
+  "Toelettatura": [],
+  "Taxi": [],
+  "Pensione": [],
+  "Dogsitter": [],
+  "Educazione": [],
+  "Bacheca": [
+
   ],
   "profile": {
     "name": "typicode"
