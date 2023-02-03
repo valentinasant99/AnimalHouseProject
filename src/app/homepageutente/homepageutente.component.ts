@@ -1,7 +1,6 @@
 import { Component, OnInit} from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
-import {FileUploader} from 'ng2-file-upload';
 @Component({
   selector: 'app-homepageutente',
   templateUrl: './homepageutente.component.html',
