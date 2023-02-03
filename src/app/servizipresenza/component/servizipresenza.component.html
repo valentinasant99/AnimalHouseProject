@@ -1,6 +1,14 @@
 <mat-toolbar>
   <span> Servizi fisici prenotabili</span>
 </mat-toolbar>
+<div class="d-flex">
+  <li (click)=toggleDisplayDivIf() class="nav-item" routerLinkActive="active">
+    <button id="bottoneservizi">
+      <a class="nav-link" routerLink="/homepageutente">Home</a>
+    </button>
+  </li>
+</div>
+
 <div class="content">
   <div fxLayout="row wrap" fxLayoutGap="16px grid">
     <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let info of info" >
