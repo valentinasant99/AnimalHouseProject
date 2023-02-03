@@ -12,6 +12,12 @@ import { LeaderboardComponent} from './leaderboard/leaderboard.component';
 import {SignupComponent} from "./signup/signup.component";
 import {ServizipresenzaComponent} from "./servizipresenza/component/servizipresenza.component";
 import {VeterinarioComponent} from "./veterinario/veterinario.component";
+import {PensioneComponent} from "./pensione/pensione.component";
+import {TaxiComponent} from "./taxi/taxi.component";
+import {DogsitterComponent} from "./dogsitter/dogsitter.component";
+import {EducazioneComponent} from "./educazione/educazione.component";
+import {ToelettaturaComponent} from "./toelettatura/toelettatura.component";
+import { LoginadminComponent } from './loginadmin/loginadmin.component';
 
 const routes: Routes = [
   { path: 'contatti', component: ContattiComponent },
@@ -24,7 +30,13 @@ const routes: Routes = [
   { path: 'homepageutente', component: HomepageutenteComponent},
   { path: 'leaderboard', component: LeaderboardComponent},
   { path: 'servizipresenza', component: ServizipresenzaComponent},
+  { path: 'pensione', component: PensioneComponent},
+  { path: 'taxi', component: TaxiComponent},
+  { path: 'educazione', component: EducazioneComponent},
+  { path: 'dogsitter', component: DogsitterComponent},
   { path: 'veterinario', component: VeterinarioComponent},
+  { path: 'toelettatura', component: ToelettaturaComponent},
+  { path: 'loginadmin', component: LoginadminComponent},
   {redirectTo:'', path:'login', pathMatch:'full'}
 
 

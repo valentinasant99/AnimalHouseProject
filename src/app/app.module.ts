@@ -30,7 +30,12 @@ import {ServizipresenzaComponent} from "./servizipresenza/component/serviziprese
 import {VeterinarioComponent} from "./veterinario/veterinario.component";
 import {LeaderboardComponent} from "./leaderboard/leaderboard.component";
 import {QuizComponent} from "./quiz/quiz.component";
-
+import {PensioneComponent} from "./pensione/pensione.component";
+import {TaxiComponent} from "./taxi/taxi.component";
+import {DogsitterComponent} from "./dogsitter/dogsitter.component";
+import {EducazioneComponent} from "./educazione/educazione.component";
+import {ToelettaturaComponent} from "./toelettatura/toelettatura.component";
+import { LoginadminComponent } from './loginadmin/loginadmin.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +51,13 @@ import {QuizComponent} from "./quiz/quiz.component";
     QuizComponent,
     ServizipresenzaComponent,
     VeterinarioComponent,
-    LeaderboardComponent
+    LeaderboardComponent,
+    PensioneComponent,
+    TaxiComponent,
+    DogsitterComponent,
+    EducazioneComponent,
+    ToelettaturaComponent,
+    LoginadminComponent
   ],
   imports: [
     BrowserModule,
