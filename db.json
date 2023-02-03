@@ -105,18 +105,30 @@
   "Toelettatura": [],
   "Taxi": [],
   "Pensione": [],
-  "Dogsitter": [],
-  "Educazione": [],
-  "Bacheca": [
+  "Dogsitter": [
     {
-      "image": "C:\\fakepath\\20220212_141103.jpg",
-      "text": "ciaoo",
+      "nomeutente": "vale",
+      "telefono": "3395337688",
+      "date": "15",
+      "month": "Febbraio",
+      "time": "17:00",
       "id": 1
     },
     {
-      "image": "C:\\fakepath\\9005f6ab-0ddb-4d37-923d-de7c765fdeb7.jpg",
-      "text": "sdjodis\n",
+      "nomeutente": "vale",
+      "telefono": "3395337688",
+      "date": null,
+      "month": null,
+      "time": null,
       "id": 2
+    }
+  ],
+  "Educazione": [],
+  "Bacheca": [
+    {
+      "image": "",
+      "text": "ciao",
+      "id": 3
     }
   ],
   "profile": {

@@ -27,7 +27,23 @@ form {
   padding-top: 2%;
   padding-bottom: 2%;
 }
+.d-flex{
+  margin-left: 65%;
+  margin-bottom: 18px;
+}
 
+button{
+  background-color: darkgoldenrod;
+  border-color: darkgoldenrod;
+}
+
+a:hover{
+  color: white;
+}
+
+#bottoneservizi{
+  margin-left:250%;
+}
 /* Imposta lo stile per i label */
 label {
   font-weight: bold;

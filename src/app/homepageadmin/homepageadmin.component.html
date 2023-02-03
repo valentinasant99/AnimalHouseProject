@@ -1,8 +1,14 @@
 <!DOCTYPE html>
+<div class="d-flex">
+  <li (click)=toggleDisplayDivIf() class="nav-item" routerLinkActive="active">
+    <button id="bottoneservizi" mat-raised-button color="success" (click)="this.authService.logout()" routerLink="/loginadmin">
+      LOGOUT</button>
+  </li>
+</div>
+
 <body>
 <div class="container">
-<button id="logout" mat-raised-button color="success" (click)="this.authService.logout()"
-        routerLink="/login">Logout</button>
+
 <h1> Benvenuto {{this.user()}}  in Animal House! <mat-icon>mood</mat-icon> </h1>
 <p id="sottotitolo"> Sei dentro alla Gestione Anagrafica: scegli l'utente per cui vuoi gestire le informazioni</p>
 <div id="tendina">
@@ -37,7 +43,7 @@
   <div class="Bacheca">
     <button (click)="salvaModifiche()" mat-raised-button color="success">Salva modifiche</button>
     <button (click)="cancellaAccount()" mat-raised-button color="success">Cancella account</button>
-    <button id="bottoneAmm" type="submit" routerLink="./bachecaadmin" mat-raised-button color="success">Vai alla bacheca Amministratore</button>
+    <button id="bottoneAmm" type="submit" routerLink="/bachecaadmin" mat-raised-button color="success">Vai alla bacheca Amministratore</button>
   </div>
 </form>
 </div>

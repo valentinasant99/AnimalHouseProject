@@ -20,6 +20,7 @@ import {ToelettaturaComponent} from "./toelettatura/toelettatura.component";
 import { LoginadminComponent } from './loginadmin/loginadmin.component';
 import {HomepageadminComponent} from "./homepageadmin/homepageadmin.component";
 import {QuizComponent} from "./quiz/quiz.component";
+import {BachecaadminComponent} from "./bachecaadmin/bachecaadmin.component";
 
 const routes: Routes = [
   { path: 'contatti', component: ContattiComponent },
@@ -41,6 +42,7 @@ const routes: Routes = [
   { path: 'veterinario', component: VeterinarioComponent},
   { path: 'toelettatura', component: ToelettaturaComponent},
   { path: 'loginadmin', component: LoginadminComponent},
+  { path: 'bachecaadmin', component: BachecaadminComponent},
   {redirectTo:'', path:'login', pathMatch:'full'}
 
 

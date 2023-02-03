@@ -133,6 +133,7 @@
   width: 100%;
   height: 70%;
   margin-left:420%;
+  color: white;
 }
 @media (max-width: 600px) {
   .carousel-caption {

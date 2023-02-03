@@ -38,7 +38,7 @@ import {ToelettaturaComponent} from "./toelettatura/toelettatura.component";
 import {LoginadminComponent } from './loginadmin/loginadmin.component';
 import {HomepageadminComponent} from "./homepageadmin/homepageadmin.component";
 import {HomepageComponent} from "./homepage/homepage.component";
-
+import {BachecaadminComponent} from "./bachecaadmin/bachecaadmin.component";
 
 @NgModule({
   declarations: [
@@ -62,7 +62,8 @@ import {HomepageComponent} from "./homepage/homepage.component";
     ToelettaturaComponent,
     LoginadminComponent,
     HomepageadminComponent,
-    HomepageComponent
+    HomepageComponent,
+    BachecaadminComponent
   ],
   imports: [
     BrowserModule,

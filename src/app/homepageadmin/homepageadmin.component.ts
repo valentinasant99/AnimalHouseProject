@@ -26,13 +26,17 @@ export class HomepageadminComponent implements OnInit {
   preferenza: any;
 
   constructor(private httpclient: HttpClient, public authService: AuthService, private router: Router) { }
+  isShowDivIf = true;
+  toggleDisplayDivIf() {
+    this.isShowDivIf = !this.isShowDivIf;
+  }
 
-  //metodo per il salvataggio dell'utente
+
   user() {
     return this.authService.userData?.nomeutente;
   }
 
-  //get iniziale per leggere gli utenti da selezionare
+
   ngOnInit(): void {
     this.httpclient.get<any>("http://localhost:3000/signUpUsers").subscribe(res => {
       //console.log(res)
@@ -40,11 +44,10 @@ export class HomepageadminComponent implements OnInit {
         this.nomeutente[index] = res[index].nomeutente;
       }
     });
-    //console.log(this.username)*/
   }
 
 
-  //get per prendere i valori dell'utente selezionato
+
   getValori() {
     console.log(this.selectedOption);
     this.httpclient.get<any>("http://localhost:3000/signupUsers")
@@ -67,7 +70,7 @@ export class HomepageadminComponent implements OnInit {
   }
 
 
-  //metodo che registra le modifiche dell'amministratore e le registra riscrivendole nel db con una put
+
   salvaModifiche() {
     this.emailInserita = (<HTMLInputElement>document.getElementById('email')).value;
     this.passwordInserita = (<HTMLInputElement>document.getElementById('password')).value;
@@ -83,7 +86,7 @@ export class HomepageadminComponent implements OnInit {
     alert("Modificato con successo!")
   }
 
-  //delete per cancellare l'account  dell'utente e i relativi dati
+
   cancellaAccount() {
     let header = { headers: new HttpHeaders({ 'Content-Type': 'application/json' }) };
     this.httpclient.delete<any>("http://localhost:3000/signUpUsers/" + this.id, header)
