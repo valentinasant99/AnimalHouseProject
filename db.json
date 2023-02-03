@@ -12,7 +12,6 @@
       "animale": "tigre",
       "email": "sofia@gmail.com",
       "password": "tigre",
-      "punteggio": "0",
       "id": 3
     },
     {
@@ -20,7 +19,6 @@
       "animale": "cavallo",
       "email": "vale@gmail.com",
       "password": "ciao",
-      "punteggio": "0",
       "id": 4
     }
   ],

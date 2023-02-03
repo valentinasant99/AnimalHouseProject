@@ -12,7 +12,7 @@ export class QuizComponent implements OnInit {
   domande: any[] = [];
   risposte: any[] = [];
   selectedOption: any[] = [];
-  punteggio: any;
+  punteggio: number = 0 ;
   rispUtente: any[] = [];
   punteggioDB: any;
   nomeutente: any;
@@ -22,15 +22,6 @@ export class QuizComponent implements OnInit {
 
 
   constructor(private httpclient: HttpClient , public authService: AuthService) { }
-
-/*  //disabilita i pulsanti se non sei loggato
-  ngOnInit(): void {
-    if (!this.authService.isLoggedIn()) {
-      this.disabilita = true;
-    }
-    this.getQuiz();
-  }*/
-
 
   //lettura domande da  random api; parametri impostati: categoria e numero domande
   getQuiz() {
@@ -72,7 +63,7 @@ export class QuizComponent implements OnInit {
 
 //  con la get prendiamo l'utente che sta giocando con la patch invece aggiorniamo il suo punteggio
   getPunteggio() {
-    this.httpclient.get<any>("http://localhost:3000/signupUsersList")
+    this.httpclient.get<any>("http://localhost:3000/signupUsers")
       .subscribe(res => {
         let user = res.find((a: any) => {
           this.nomeutente = this.authService.userData?.nomeutente;
