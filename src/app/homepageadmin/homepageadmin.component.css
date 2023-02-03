@@ -1,0 +1,84 @@
+body {
+  border-radius: 3%;
+  margin-top: 5%;
+  background: transparent;
+}
+
+.container{
+  background-color: bisque;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+  border-radius: 3%;
+
+}
+
+mat-card-title{
+  font-size: 16pt;
+  text-align: left;
+}
+
+#sottotitolo{
+  font-size: 16pt;
+}
+
+
+h1 {
+  margin-left: 21%;
+  padding-top: 3%;
+  font-size: 26pt;
+  text-align: center;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-weight: bolder;
+}
+
+
+input{
+ margin-bottom:2%;
+}
+
+label {
+  font-weight: bolder;
+}
+
+
+
+button {
+  color: #865306;
+  margin-left: 10%;
+}
+
+#bottoneAmm{
+  color: darkred;
+}
+
+#logout {
+  margin-top: 1%;
+  display: float;
+  float: right;
+  width: 10%;
+  height: 8%;
+  margin-right: 5%;
+  background-color: #45464569;
+  color: black;
+}
+
+#bottoneConferma {
+  margin-left: 2%
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: smaller;
+  }
+
+  body {
+    padding: 5%;
+  }
+
+  #logout {
+    margin-top: 1%;
+    font-size: x-small;
+    height: 5%;
+  }
+}

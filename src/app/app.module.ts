@@ -25,7 +25,7 @@ import {MatToolbar, MatToolbarModule} from "@angular/material/toolbar";
 import { FlexLayoutModule } from "@angular/flex-layout";
 import {InfoComponent} from "./info/component/info.component";
 import {CuriositaComponent} from "./curiosita/component/curiosita.component";
-import { HomepageutenteComponent } from './homepageutente/homepageutente.component';
+import {HomepageutenteComponent } from './homepageutente/homepageutente.component';
 import {ServizipresenzaComponent} from "./servizipresenza/component/servizipresenza.component";
 import {VeterinarioComponent} from "./veterinario/veterinario.component";
 import {LeaderboardComponent} from "./leaderboard/leaderboard.component";
@@ -35,7 +35,9 @@ import {TaxiComponent} from "./taxi/taxi.component";
 import {DogsitterComponent} from "./dogsitter/dogsitter.component";
 import {EducazioneComponent} from "./educazione/educazione.component";
 import {ToelettaturaComponent} from "./toelettatura/toelettatura.component";
-import { LoginadminComponent } from './loginadmin/loginadmin.component';
+import {LoginadminComponent } from './loginadmin/loginadmin.component';
+import {HomepageadminComponent} from "./homepageadmin/homepageadmin.component";
+
 
 @NgModule({
   declarations: [
@@ -57,7 +59,8 @@ import { LoginadminComponent } from './loginadmin/loginadmin.component';
     DogsitterComponent,
     EducazioneComponent,
     ToelettaturaComponent,
-    LoginadminComponent
+    LoginadminComponent,
+    HomepageadminComponent
   ],
   imports: [
     BrowserModule,

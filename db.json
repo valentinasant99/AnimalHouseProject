@@ -8,18 +8,12 @@
   ],
   "signupUsers": [
     {
-      "nomeutente": "vale",
-      "animale": "gatto",
+      "nomeutente": "Vale",
       "email": "vale@gmail.com",
       "password": "ciao",
-      "id": 1
-    },
-    {
-      "nomeutente": "Ale",
-      "animale": "cane",
-      "email": "alessiatasca@gmail.com",
-      "password": "Alessia2000",
-      "id": 2
+      "punteggio": "",
+      "animale": "gatto",
+      "id": 3
     }
   ],
   "Veterinario": [

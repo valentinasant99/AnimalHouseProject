@@ -18,6 +18,8 @@ import {DogsitterComponent} from "./dogsitter/dogsitter.component";
 import {EducazioneComponent} from "./educazione/educazione.component";
 import {ToelettaturaComponent} from "./toelettatura/toelettatura.component";
 import { LoginadminComponent } from './loginadmin/loginadmin.component';
+import {HomepageadminComponent} from "./homepageadmin/homepageadmin.component";
+import {QuizComponent} from "./quiz/quiz.component";
 
 const routes: Routes = [
   { path: 'contatti', component: ContattiComponent },
@@ -28,6 +30,8 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'curiosita', component: CuriositaComponent},
   { path: 'homepageutente', component: HomepageutenteComponent},
+  { path: 'homepageadmin', component: HomepageadminComponent},
+  { path: 'quiz', component: QuizComponent},
   { path: 'leaderboard', component: LeaderboardComponent},
   { path: 'servizipresenza', component: ServizipresenzaComponent},
   { path: 'pensione', component: PensioneComponent},

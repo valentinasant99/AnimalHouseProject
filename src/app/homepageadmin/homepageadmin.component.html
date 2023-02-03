@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<body>
+<div class="container">
+<button id="logout" mat-raised-button color="success" (click)="this.authService.logout()"
+        routerLink="/login">Logout</button>
+<h1> Benvenuto {{this.user()}}  in Animal House! <mat-icon>mood</mat-icon> </h1>
+<p id="sottotitolo"> Sei dentro alla Gestione Anagrafica: scegli l'utente per cui vuoi gestire le informazioni</p>
+<div id="tendina">
+  <mat-card-title>Seleziona qui: </mat-card-title>
+  <mat-form-field appearance="fill">
+    <mat-label>nome utente:</mat-label>
+    <mat-select [(ngModel)]="selectedOption">
+      <mat-option *ngFor="let nome of nomeutente" [value]="nome">
+        {{nome}}</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <button id="bottoneConferma" (click)="getValori()" mat-raised-button color="success">Conferma</button>
+</div>
+<br>
+<br>
+<form class="form">
+  <div >
+    <label>E-mail: </label>
+    <input type="text" id="email" value="{{email}}"> <br>
+    <label>Password: </label>
+    <input type="text" id="password" value="{{password}}"> <br>
+    <label>Nome Utente: </label>
+    <input type="text" id="username" value="{{selectedOption}}"> <br>
+    <label>Punteggio: </label>
+    <input type="number" id="punteggio" value="{{punteggio}}"> <br>
+    <label>Animale Preferito: </label>
+    <input type="text" id="animali" value="{{preferenza}}"> <br>
+  </div>
+  <br>
+  <br>
+  <br>
+  <div class="Bacheca">
+    <button (click)="salvaModifiche()" mat-raised-button color="success">Salva modifiche</button>
+    <button (click)="cancellaAccount()" mat-raised-button color="success">Cancella account</button>
+    <button id="bottoneAmm" type="button" routerLink="/bachecaadmin" mat-raised-button color="success">Vai alla bacheca Amministratore</button>
+  </div>
+</form>
+</div>
+</body>

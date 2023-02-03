@@ -1,5 +1,5 @@
-import { Injectable } from '@angular/core';
-import {userdtoModels} from "../dto/userdto.models";
+import { Injectable } from "@angular/core";
+import { userdtoModels} from "../dto/userdto.models";
 
 
 export const AUTH_TOKEN_KEY = 'auth-token';
@@ -10,6 +10,7 @@ export const AUTH_USER_DATA = 'user-data '
 })
 
 export class AuthService {
+
   public authToken: string | null = null;
   public userData: userdtoModels | null = null;
 
@@ -49,4 +50,5 @@ export class AuthService {
     sessionStorage.clear();
     this.checkStorage();
   }
+
 }

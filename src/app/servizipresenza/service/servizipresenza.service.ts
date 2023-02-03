@@ -52,7 +52,7 @@ export class InfoService {
         "title": 'Pet taxi',
         "subtitle": 'l trasporto animali domestici è un fattore importante grazie al quale potrai raggiungere un centro cinofilo, un parco o un preciso luogo in cui far muovere e far giocare il tuo animale a quattro zampe. Se hai poco tempo a tua disposizione, tra lavoro e famiglia o non disponi ' +
           'del veicolo adatto, può essere necessario appoggiarsi ad un servizio specializzato come il pet taxi.',
-        "link": '/pettaxi',
+        "link": '/taxi',
         "img": '../../../assets/taxi.png'
       }
     ]

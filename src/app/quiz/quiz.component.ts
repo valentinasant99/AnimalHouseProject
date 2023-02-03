@@ -75,9 +75,9 @@ export class QuizComponent implements OnInit {
     this.httpclient.get<any>("http://localhost:3000/signupUsersList")
       .subscribe(res => {
         let user = res.find((a: any) => {
-          this.nomeutente = this.authService.userData?.email;
+          this.nomeutente = this.authService.userData?.nomeutente;
           this.password = this.authService.userData?.password;
-          return a.email === this.nomeutente && a.password === this.password;
+          return a.nomeutente === this.nomeutente && a.password === this.password;
         });
         if (user) {
           let variabile = user.id;
