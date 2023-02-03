@@ -6,6 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+<div class="d-flex">
+  <li (click)=toggleDisplayDivIf() class="nav-item" routerLinkActive="active">
+    <button id="bottoneloginutente">
+      <a routerLink="/login"> Login utente</a>
+    </button>
+  </li>
+  <li (click)=toggleDisplayDivIf() class="nav-item" routerLinkActive="active">
+    <button id="bottoneloginadmin">
+      <a class="nav-link" routerLink="/loginadmin"> Login admin</a>
+    </button>
+  </li>
+</div>
   <div class="carousel-inner" role="listbox">
     <div class="item active">
       <img src="assets/home1.jpg" alt="Image">

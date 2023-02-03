@@ -1,18 +1,41 @@
-<mat-toolbar>
-  <span> Guarda questi video...</span>
-</mat-toolbar>
-<div class="content">
-  <div fxLayout="row wrap" fxLayoutGap="16px grid">
-    <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let info of info" >
-      <mat-card id="cardAnimal" class="mat-elevation-z4">
-        <mat-card-header>
-          <mat-card-title> {{info.title}} </mat-card-title>
-        </mat-card-header>
-        <mat-card-content>
-          {{info.link}}
-        </mat-card-content>
+<!DOCTYPE html>
+<body>
+<form class="form-signin">
+  <h1><b>Guarda questi video...</b></h1>
+</form>
 
-      </mat-card>
+<div class="grid">
+  <form class="form-signin1">
+    <div class="email">
+      <p>Sai chi è l'animale più forte della savana?</p>
+      <br>
+      <br>
+      <iframe width="250" height="200" src="https://www.youtube.com/watch?v=hlAHjHupCqA" title= "YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+      </iframe>
     </div>
-  </div>
+  </form>
+  <form class="form-signin1">
+    <div class="localizzazione">
+      <p>Sapevi che gli animali si muovono meglio in gruppo?</p>
+      <iframe width="250" height="200" src="https://www.youtube.com/watch?v=hlAHjHupCqA" title= "YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+      </iframe>
+    </div>
+  </form>
+  <form class="form-signin1">
+    <div class="social">
+      <p>Guarda come sono diventati gli animali dopo il Covid</p>
+      <iframe width="250" height="200" src="https://www.youtube.com/watch?v=hlAHjHupCqA" title= "YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+      </iframe>
+    </div>
+  </form>
 </div>
+</body>

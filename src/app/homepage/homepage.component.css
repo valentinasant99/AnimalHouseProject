@@ -113,6 +113,27 @@
 
   }
 }
+.d-flex{
+  margin-left: 50%;
+  margin-bottom: 20px;
+}
+
+
+#bottoneloginutente{
+  background-color: darkgoldenrod;
+  border-color: darkgoldenrod;
+  width: 100%;
+  height: 70%;
+  margin-left:400%;
+  color: white;
+}
+#bottoneloginadmin{
+  background-color: darkgoldenrod;
+  border-color: darkgoldenrod;
+  width: 100%;
+  height: 70%;
+  margin-left:420%;
+}
 @media (max-width: 600px) {
   .carousel-caption {
     display: none;

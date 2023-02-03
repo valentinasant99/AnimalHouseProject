@@ -8,6 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class HomepageComponent implements OnInit{
 
   constructor() { }
+  isShowDivIf = true;
+  toggleDisplayDivIf() {
+    this.isShowDivIf = !this.isShowDivIf;
+  }
   ngOnInit(): void {
   }
 }
