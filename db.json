@@ -8,18 +8,26 @@
   ],
   "signupUsers": [
     {
-      "nomeutente": "vale",
-      "animale": "gatto",
-      "email": "vale@gmail.com",
-      "password": "ciao",
-      "id": 1
+      "nomeutente": "Sofia",
+      "animale": "tigre",
+      "email": "sofia@gmail.com",
+      "password": "tigre",
+      "punteggio": "0",
+      "id": 3
     },
     {
-      "nomeutente": "Ale",
-      "animale": "cane",
-      "email": "alessiatasca@gmail.com",
-      "password": "Alessia2000",
-      "id": 2
+      "nomeutente": "Vale",
+      "animale": "cavallo",
+      "email": "vale@gmail.com",
+      "password": "ciao",
+      "punteggio": "0",
+      "id": 4
+    }
+  ],
+  "amministratore": [
+    {
+      "nomeutente": "Mario",
+      "password": "delfino"
     }
   ],
   "Veterinario": [
@@ -102,7 +110,11 @@
   "Dogsitter": [],
   "Educazione": [],
   "Bacheca": [
-
+    {
+      "image": "C:\\fakepath\\20220212_141103.jpg",
+      "text": "ciaoo",
+      "id": 1
+    }
   ],
   "profile": {
     "name": "typicode"

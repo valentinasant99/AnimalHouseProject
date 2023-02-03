@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {HttpClient, HttpHeaders} from "@angular/common/http";
-import {AuthService} from "../services/auth.service";
+import { AuthService } from '../services/auth.service';
 
 @Component({
   selector: 'app-quiz',
@@ -12,7 +12,7 @@ export class QuizComponent implements OnInit {
   domande: any[] = [];
   risposte: any[] = [];
   selectedOption: any[] = [];
-  punteggio: number = 0;
+  punteggio: any;
   rispUtente: any[] = [];
   punteggioDB: any;
   nomeutente: any;
@@ -21,7 +21,7 @@ export class QuizComponent implements OnInit {
   disabilita = false;
 
 
-  constructor(private httpclient: HttpClient /* , public authService: AuthService*/) { }
+  constructor(private httpclient: HttpClient , public authService: AuthService) { }
 
 /*  //disabilita i pulsanti se non sei loggato
   ngOnInit(): void {
@@ -61,17 +61,17 @@ export class QuizComponent implements OnInit {
           //console.log(this.punteggio);
       }
     this.punteggioDB = { punteggio: this.punteggio.toString() }
-/*    if (this.AuthService.isLoggedIn()) {
+    if (this.authService.isLoggedIn()) {
       this.getPunteggio();
     } else {
       alert("Per salvare il tuo punteggio devi effettuare il login");
-    }*/
+    }
   }
 
 
 
 //  con la get prendiamo l'utente che sta giocando con la patch invece aggiorniamo il suo punteggio
-/*  getPunteggio() {
+  getPunteggio() {
     this.httpclient.get<any>("http://localhost:3000/signupUsersList")
       .subscribe(res => {
         let user = res.find((a: any) => {
@@ -83,7 +83,7 @@ export class QuizComponent implements OnInit {
           let variabile = user.id;
           //console.log(variabile);
           let header = { headers: new HttpHeaders({ 'Content-Type': 'application/json' }) };
-          this.httpclient.patch<any>("http://localhost:3000/signUpUsersList" + "/" + variabile, this.punteggioDB, header)
+          this.httpclient.patch<any>("http://localhost:3000/signUpUsers" + "/" + variabile, this.punteggioDB, header)
             .subscribe(
             )
         } else {
@@ -92,7 +92,7 @@ export class QuizComponent implements OnInit {
       }, err => {
         alert("Something went wrong");
       })
-  }*/
+  }
 
 
   //resettiamo le caselle per ricominciare a giocare
