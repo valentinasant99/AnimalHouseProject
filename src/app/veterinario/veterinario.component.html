@@ -1,6 +1,14 @@
-<form [formGroup]="appointmentForm" (ngSubmit)="onSubmit()">
+<div class="d-flex">
+    <li (click)=toggleDisplayDivIf() class="nav-item" routerLinkActive="active">
+      <button id="bottoneservizi">
+        <a class="nav-link" routerLink="/servizipresenza"> Servizi</a>
+      </button>
+    </li>
+  </div>
+  <form [formGroup]="appointmentForm" (ngSubmit)="onSubmit()">
   <h2>Prenota il tuo appuntamento</h2>
-  <div>
+
+    <div>
     <label>Nome e Cognome cliente:</label>
     <input type="text" formControlName="nomeutente"/>
   </div>

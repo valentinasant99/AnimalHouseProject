@@ -6,6 +6,25 @@ form{
   padding:5px;
   background-color:bisque;
   border-radius: 10px;
+  width: 70%;
+  margin-left: 15%;
+}
+.d-flex{
+  margin-left: 65%;
+  margin-bottom: 18px;
+}
+
+button{
+  background-color: darkgoldenrod;
+  border-color: darkgoldenrod;
+}
+
+a:hover{
+  color: white;
+}
+
+#bottoneservizi{
+  margin-left:250%;
 }
 label{
   margin:10px 0;

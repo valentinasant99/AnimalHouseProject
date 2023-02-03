@@ -16,6 +16,13 @@ export class DogsitterComponent implements OnInit{
 
   constructor(private http: HttpClient) {}
 
+  isShowDivIf = true;
+  toggleDisplayDivIf() {
+    this.isShowDivIf = !this.isShowDivIf;
+  }
+
+
+
   ngOnInit() {
     this.appointmentForm = new FormGroup({
       nomeutente: new FormControl(''),

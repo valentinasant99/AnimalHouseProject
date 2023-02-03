@@ -14,6 +14,10 @@ export class EducazioneComponent implements OnInit{
   availableTimes = ['', '17:00', '18:00', '19:00'];
 
   constructor(private http: HttpClient) {}
+  isShowDivIf = true;
+  toggleDisplayDivIf() {
+    this.isShowDivIf = !this.isShowDivIf;
+  }
 
   ngOnInit() {
     this.appointmentForm = new FormGroup({

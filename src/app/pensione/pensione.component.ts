@@ -14,7 +14,10 @@ export class PensioneComponent implements OnInit{
   availableMonths = ['','Maggio','Giugno','Luglio','Agosto','Settembre'];
 
   constructor(private http: HttpClient) {}
-
+  isShowDivIf = true;
+  toggleDisplayDivIf() {
+    this.isShowDivIf = !this.isShowDivIf;
+  }
   ngOnInit() {
     this.appointmentForm = new FormGroup({
       nomeutente: new FormControl(''),
