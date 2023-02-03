@@ -13,11 +13,19 @@
 
   <h1>Leaderboard</h1>
   <table>
+    <thead>
     <tr>
       <th>Giocatore</th>
       <th>Punteggio</th>
       <th>Data</th>
     </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let opzione of giocatore ">
+      <td>{{opzione.nomeutente}}</td>
+      <td>{{opzione.punteggio}}</td>
+    </tr>
+    </tbody>
   </table>
 </form>
 

@@ -2,6 +2,9 @@ import {Component, OnInit} from '@angular/core';
 import{FormGroup, FormBuilder} from '@angular/forms';
 import {HttpClient} from "@angular/common/http";
 import {Router} from "@angular/router";
+import { AuthService } from '../services/auth.service';
+
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -9,7 +12,7 @@ import {Router} from "@angular/router";
 })
 export class LoginComponent implements OnInit{
   public loginForm !: FormGroup
-  constructor(private formBuilder : FormBuilder, private http:HttpClient, private router:Router) { }
+  constructor(private formBuilder : FormBuilder, private http:HttpClient, private router:Router, public authService: AuthService ) { }
   ngOnInit():void {
     this.loginForm=this.formBuilder.group({
       nomeutente:[''],
@@ -26,12 +29,16 @@ export class LoginComponent implements OnInit{
           alert("Login avvenuto con successo");
           this.loginForm.reset();
           this.router.navigate(['homepageutente'])
+          this.authService.login(user);
         } else {
           alert("Nome utente non trovato");
         }
       }, err =>{
         alert("Qualcosa è andato storto")
       })
+  }
+  user() {
+    return this.authService.userData?.nomeutente;
   }
 }
 

@@ -36,7 +36,6 @@ export class LoginadminComponent implements OnInit{
         alert("Qualcosa è andato storto")
       })
   }
-  //salvataggio utente
   user() {
     return this.authService.userData?.nomeutente;
   }
