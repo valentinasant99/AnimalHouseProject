@@ -1,0 +1,30 @@
+<form [formGroup]="appointmentForm" (ngSubmit)="onSubmit()">
+  <h2>Prenota il tuo appuntamento</h2>
+  <div>
+    <label>Nome e Cognome cliente:</label>
+    <input type="text" formControlName="nomeutente"/>
+  </div>
+  <div>
+    <label>Numero Telefono:</label>
+    <input type="text" formControlName="telefono"/>
+  </div>
+  <div>
+    <label>Giorno:</label>
+    <select formControlName="date">
+      <option *ngFor="let date of availableDates" [value]="date">{{date}}</option>
+    </select>
+  </div>
+  <div>
+    <label>Mese:</label>
+    <select formControlName="month">
+      <option *ngFor="let month of availableMonths" [value]="month">{{month}}</option>
+    </select>
+  </div>
+  <div>
+    <label>Orario:</label>
+    <select formControlName="time">
+      <option *ngFor="let time of availableTimes" [value]="time">{{time}}</option>
+    </select>
+  </div>
+  <button type="submit">Prenota</button>
+</form>
