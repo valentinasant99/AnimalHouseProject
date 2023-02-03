@@ -61,7 +61,7 @@ export class QuizComponent implements OnInit {
 
 
 
-//  con la get prendiamo l'utente che sta giocando con la patch invece aggiorniamo il suo punteggio
+  //con la get prendiamo l'utente che sta giocando con la patch invece aggiorniamo il suo punteggio
   getPunteggio() {
     this.httpclient.get<any>("http://localhost:3000/signupUsers")
       .subscribe(res => {
@@ -78,10 +78,10 @@ export class QuizComponent implements OnInit {
             .subscribe(
             )
         } else {
-          alert("user not found")
+          alert("Utente non trovato")
         }
       }, err => {
-        alert("Something went wrong");
+        alert("Qualcosa è andato storto");
       })
   }
 
