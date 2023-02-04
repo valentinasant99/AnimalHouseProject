@@ -37,4 +37,26 @@
   </div>
   <button type="submit">Prenota</button>
 </form>
+<div class="appointment-container">
+  <h2>Appuntamenti prenotati</h2>
+  <table>
+    <thead>
+    <tr>
+      <th>Nome e Cognome cliente</th>
+      <th>Numero Telefono</th>
+      <th>Data</th>
+      <th>Orario</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let appointment of appointments">
+      <td>{{appointment.nomeutente}}</td>
+      <td>{{appointment.telefono}}</td>
+      <td>{{appointment.date}}</td>
+      <td>{{appointment.month}}</td>
+      <td>{{appointment.time}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
 </body>
