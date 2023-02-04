@@ -78,28 +78,6 @@ mat-radio-button {
 
 }
 
-.d-flex{
-  margin-left: 50%;
-  margin-top: 0%;
-}
-
-
-a:hover{
-  color: white;
-}
-
-
-#bottoneLeaderboard{
-  margin-left:300%;
-  background-color: darkgoldenrod;
-  border-color: darkgoldenrod;
-}
-
-a{
-  font-size: 14pt;
-  color: white;
-}
-
 @media only screen and (max-width: 480px) {
   body {
     margin-left: 0;

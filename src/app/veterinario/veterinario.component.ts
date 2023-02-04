@@ -37,11 +37,11 @@ export class VeterinarioComponent implements OnInit {
   }
 
   onSubmit() {
-    if (this.appointmentForm.value.nomeutente === '' && this.appointmentForm.value.telefono === '' && this.appointmentForm.value.date === '' && this.appointmentForm.value.month === '' && this.appointmentForm.value.time === ''){
+    if (this.appointmentForm.value.nomeutente === '' || this.appointmentForm.value.telefono === '' || this.appointmentForm.value.date === '' || this.appointmentForm.value.month === '' || this.appointmentForm.value.time === ''){
       console.error('Dati mancanti nel form di prenotazione');
       return;
     }
-    this.http.post<any>("http://localhost:3000/Dogsitter", this.appointmentForm.value)
+    this.http.post<any>("http://localhost:3000/Veterinario", this.appointmentForm.value)
       .subscribe(res => {
         alert("Prenotazione avvenuta con successo");
         this.appointmentForm.reset();

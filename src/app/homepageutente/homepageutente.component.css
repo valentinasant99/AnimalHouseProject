@@ -69,18 +69,19 @@ h1 {
   font-weight: bolder;
 }
 .d-flex{
-  margin-left: 62%;
+  margin-top: 2%;
+  margin-left: 58%;
   margin-bottom: 18px;
 }
 
 #bottoneLeaderboard{
-  margin-left:50%;
+
 }
 #bottoneServizi{
-  margin-left:80%;
+
 }
 #bottoneLogout{
-  margin-left:90%;
+
 
 }
 @media (max-width: 480px) {
