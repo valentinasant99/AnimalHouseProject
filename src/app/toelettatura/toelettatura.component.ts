@@ -30,16 +30,16 @@ export class ToelettaturaComponent implements OnInit{
     });
   }
   onSubmit() {
-    if (this.appointmentForm.valid) {
-      this.http.post<any>("http://localhost:3000/Toelettatura", this.appointmentForm.value)
-        .subscribe(res => {
-          alert("Prenotazione avvenuta con successo");
-          this.appointmentForm.reset();
-        }, err => {
-          alert("Qualcosa è andato storto");
-        });
-    } else {
-      alert("Compilare tutti i campi prima di prenotare");
+    if (this.appointmentForm.value.nomeutente === '' && this.appointmentForm.value.telefono === '' && this.appointmentForm.value.date === '' && this.appointmentForm.value.month === '' && this.appointmentForm.value.time === ''){
+      console.error('Dati mancanti nel form di prenotazione');
+      return;
     }
+    this.http.post<any>("http://localhost:3000/Dogsitter", this.appointmentForm.value)
+      .subscribe(res => {
+        alert("Prenotazione avvenuta con successo");
+        this.appointmentForm.reset();
+      }, err => {
+        alert("Qualcosa è andato storto");
+      });
   }
 }
