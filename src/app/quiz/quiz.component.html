@@ -1,15 +1,12 @@
 <!DOCTYPE html>
-
-<body>
 <div class="d-flex">
   <li (click)=toggleDisplayDivIf() class="nav-item" routerLinkActive="active">
     <button id="bottoneServizi">
-      <a class="nav-link" routerLink="/homepageutente">Home</a>
+      <a class="nav-link" routerLink="/leaderboard">Leaderboard</a>
     </button>
   </li>
 </div>
-<button id="logout" mat-raised-button color="success" [disabled]="disabilita" (click)="this.authService.logout()">
-        routerLink="/login"> Logout</button>
+<body>
 <section class="quiz">
   <h1>Gioca al nostro super quiz!</h1>
   <h3>Quanto te ne intendi di animali? Scoprilo insieme a noi!</h3>

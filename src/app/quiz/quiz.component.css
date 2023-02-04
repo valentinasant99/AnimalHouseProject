@@ -5,7 +5,7 @@ img {
 
 body {
   border-radius: 5%;
-  margin-top: 5%;
+  margin-top: 2%;
   background: bisque;
   margin-left: 5%;
   margin-right: 5%;
@@ -79,8 +79,8 @@ mat-radio-button {
 }
 
 .d-flex{
-  margin-left: 87%;
-  margin-top: 2%;
+  margin-left: 50%;
+  margin-top: 0%;
 }
 
 
@@ -90,7 +90,7 @@ a:hover{
 
 
 #bottoneServizi{
-  margin-left:500%;
+  margin-left:300%;
   background-color: darkgoldenrod;
   border-color: darkgoldenrod;
 }
