@@ -3,6 +3,7 @@ import{FormGroup, FormBuilder} from '@angular/forms';
 import {HttpClient} from "@angular/common/http";
 import {Router} from "@angular/router";
 import { AuthService } from '../services/auth.service';
+import {userdtoModels} from "../dto/userdto.models";
 
 
 @Component({
@@ -22,7 +23,8 @@ export class LoginComponent implements OnInit{
   login(){
     this.http.get<any>("http://localhost:3000/signupUsers")
       .subscribe(res=> {
-        const user = res.find((a: any) => {
+        let user = new userdtoModels();  //nuovo utente per la sessione
+           user = res.find((a: any) => {
           return a.nomeutente === this.loginForm.value.nomeutente && a.password === this.loginForm.value.password
         });
         if (user) {
