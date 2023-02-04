@@ -64,16 +64,17 @@ h2{
 
 }
 
-@media only screen and (max-width: 480px) {
-  form {
-    width: 100%;
-    margin-left: 0;
-  }
-  .d-flex {
-    margin-left: 0;
-  }
-  #bottoneServizi {
-    margin-left: 0;
-    margin-right: 500%;
-  }
+.appointment-container{
+  display:flex;
+  flex-direction:column;
+  margin:30px;
+  padding-top:5px;
+  padding-bottom: 5px;
+  background-color:bisque;
+  border-radius: 10px;
+  width: 70%;
+  margin-left: 15%;
+  padding-left: 3%;
+  padding-right: 1%;
+
 }
