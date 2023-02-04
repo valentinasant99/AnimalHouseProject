@@ -51,35 +51,21 @@ tr {
   border-collapse: separate;
 }
 
-#logout,
-#home {
-  display: float;
-  float: right;
-  width: 10%;
-  height: 8%;
-  margin-right: 5%;
-  background-color: #45464569;
-  color: black;
-}
-
 .d-flex{
   margin-left: 87%;
 
   margin-top: 2%;
 }
 
-button{
-  background-color: darkgoldenrod;
-  border-color: darkgoldenrod;
-}
 
 a:hover{
   color: white;
 }
 
-
-#bottoneServizi{
-  margin-left:500%;
+#bottoneLeaderboard{
+  background-color: darkgoldenrod;
+  border-color: darkgoldenrod;
+  margin-left:50%;
 }
 
 a{
@@ -87,10 +73,3 @@ a{
   color: white;
 }
 
-@media (max-width: 576px) {
-
-  #logout,
-  #home {
-    margin-top: 8%;
-  }
-}

@@ -99,6 +99,7 @@
   opacity: 0.8;
 }
 
+/* da mettere aposto*/
 @media screen and (min-width: 992px){
   .about-wrapper{
     display: grid;
@@ -119,10 +120,6 @@
 
 }
 
-button{
-  background-color: darkgoldenrod;
-  border-color: darkgoldenrod;
-}
 
 a:hover{
   color: white;
@@ -154,9 +151,4 @@ a{
   margin-left:25%;
   color: white;
   margin-bottom: 20%;
-}
-@media (max-width: 600px) {
-  .carousel-caption {
-    display: none;
-  }
 }

@@ -73,16 +73,3 @@ img {
   height: 60% !important;
 }
 
-
-@media (max-width: 576px) {
-  img {
-    width: 50%;
-    height: 200px;
-    margin-top: 15%;
-  }
-
-  .email {
-    margin-left: 1%;
-  }
-
-}

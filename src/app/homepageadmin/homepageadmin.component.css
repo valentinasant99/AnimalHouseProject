@@ -65,21 +65,7 @@ button {
   margin-left: 2%
 }
 
-@media (max-width: 576px) {
-  h1 {
-    font-size: smaller;
-  }
 
-  body {
-    padding: 5%;
-  }
-
-  #logout {
-    margin-top: 1%;
-    font-size: x-small;
-    height: 5%;
-  }
-}
 .d-flex{
   margin-left: 65%;
   margin-bottom: 18px;

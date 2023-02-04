@@ -10,13 +10,8 @@ form{
   margin-left: 15%;
 }
 .d-flex{
-  margin-left: 55%;
+  margin-left: 85%;
   margin-bottom: 18px;
-}
-
-button{
-  background-color: darkgoldenrod;
-  border-color: darkgoldenrod;
 }
 
 a:hover{
@@ -24,14 +19,15 @@ a:hover{
 }
 
 #bottoneServizi{
-  margin-left:349%;
+  background-color: darkgoldenrod;
+  border-color: darkgoldenrod;
+  margin-left:50%;
 }
 
 a{
   font-size: 14pt;
   color: white;
 }
-
 label{
   margin:10px 0;
 }

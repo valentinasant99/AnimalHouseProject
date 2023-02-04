@@ -10,19 +10,9 @@
 }
 
 .d-flex{
-  margin-left: 65%;
-  margin-bottom: 18px;
-}
-
-.d-flex{
   margin-left: 87%;
-
+  margin-bottom: 18px;
   margin-top: 2%;
-}
-
-button{
-  background-color: darkgoldenrod;
-  border-color: darkgoldenrod;
 }
 
 a:hover{
@@ -30,8 +20,10 @@ a:hover{
 }
 
 
-#bottoneServizi{
-  margin-left:500%;
+#bottonehome{
+  background-color: darkgoldenrod;
+  border-color: darkgoldenrod;
+  margin-left:30%;
 }
 
 a{
@@ -52,11 +44,12 @@ mat-toolbar{
   padding-left: 35%;
 }
 
-.bottonecard{
-  background-color: #865306;
+.bottoneCard{
+  background-color: darkgoldenrod;
+  border-color: darkgoldenrod;
   border: none;
   color: white;
-  padding: 25px 32px;
+  padding: 10px 15px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
