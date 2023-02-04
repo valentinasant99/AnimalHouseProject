@@ -1,3 +1,7 @@
+body{
+  background: transparent;
+}
+
 form{
   display:flex;
   flex-direction:column;
