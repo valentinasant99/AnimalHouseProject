@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
+import {AuthService} from "../services/auth.service";
 
 @Component({
   selector: 'app-pensione',
@@ -13,7 +14,7 @@ export class PensioneComponent implements OnInit{
     '21','22','23','24','25','26','27','28','29','30','31'];
   availableMonths = ['','Maggio','Giugno','Luglio','Agosto','Settembre'];
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, public auth: AuthService) {}
   isShowDivIf = true;
   toggleDisplayDivIf() {
     this.isShowDivIf = !this.isShowDivIf;
