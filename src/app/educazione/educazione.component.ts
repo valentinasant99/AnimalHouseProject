@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
+import {AuthService} from "../services/auth.service";
 
 @Component({
   selector: 'app-educazione',
@@ -13,7 +14,7 @@ export class EducazioneComponent implements OnInit{
   availableMonths = ['','Gennaio','Marzo','Maggio','Luglio','Settembre','Novembre'];
   availableTimes = ['', '17:00', '18:00', '19:00'];
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, public auth: AuthService) {}
   isShowDivIf = true;
   toggleDisplayDivIf() {
     this.isShowDivIf = !this.isShowDivIf;
@@ -29,13 +30,17 @@ export class EducazioneComponent implements OnInit{
     });
   }
   onSubmit() {
-    this.http.post<any>("http://localhost:3000/Educazione", this.appointmentForm.value)
-      .subscribe(res=>{
-        alert("Prenotazione avvenuta con successo");
-        this.appointmentForm.reset();
-      }, err=>{
-        alert("Qualcosa è andato storto");
-      });
+    if (this.appointmentForm.valid) {
+      this.http.post<any>("http://localhost:3000/Educazione", this.appointmentForm.value)
+        .subscribe(res => {
+          alert("Prenotazione avvenuta con successo");
+          this.appointmentForm.reset();
+        }, err => {
+          alert("Qualcosa è andato storto");
+        });
+    } else {
+      alert("Compilare tutti i campi prima di prenotare");
+    }
   }
 }
 

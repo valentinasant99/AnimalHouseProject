@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
+import { AuthService } from '../services/auth.service';
 
 @Component({
   selector: 'app-toelettatura',
@@ -14,7 +15,7 @@ export class ToelettaturaComponent implements OnInit{
   availableMonths = ['','Gennaio', 'Febbraio','Marzo','Aprile','Maggio','Giugno','Luglio','Agosto','Settembre','Ottobre','Novembre','Dicembre'];
   availableTimes = ['','8:00', '9:00', '10:00', '11:00', '12:00', '13:00', '14:00', '15:00', '16:00', '17:00', '18:00', '19:00'];
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, public authService: AuthService) {}
   isShowDivIf = true;
   toggleDisplayDivIf() {
     this.isShowDivIf = !this.isShowDivIf;
@@ -29,12 +30,16 @@ export class ToelettaturaComponent implements OnInit{
     });
   }
   onSubmit() {
-    this.http.post<any>("http://localhost:3000/Toelettatura", this.appointmentForm.value)
-      .subscribe(res=>{
-        alert("Prenotazione avvenuta con successo");
-        this.appointmentForm.reset();
-      }, err=>{
-        alert("Qualcosa è andato storto");
-      });
+    if (this.appointmentForm.valid) {
+      this.http.post<any>("http://localhost:3000/Toelettatura", this.appointmentForm.value)
+        .subscribe(res => {
+          alert("Prenotazione avvenuta con successo");
+          this.appointmentForm.reset();
+        }, err => {
+          alert("Qualcosa è andato storto");
+        });
+    } else {
+      alert("Compilare tutti i campi prima di prenotare");
+    }
   }
 }

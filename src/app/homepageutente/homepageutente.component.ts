@@ -32,6 +32,10 @@ export class HomepageutenteComponent implements OnInit{
   }
 
   onSubmit() {
+    if (this.postForm.value.image === '' && this.postForm.value.text === '') {
+      console.error('Post non valido, immagine o testo mancanti');
+      return;
+    }
     this.http.post('http://localhost:3000/Bacheca', this.postForm.value)
       .subscribe(response => {
         console.log('Post pubblicato con successo ', response);
