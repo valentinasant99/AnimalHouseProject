@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<div class="d-flex">
   <li (click)=toggleDisplayDivIf() class="nav-item" routerLinkActive="active">
     <button id="bottoneLeaderboard">
       <a class="nav-link" routerLink="/leaderboard"> Leaderboard</a>
@@ -14,6 +15,7 @@
       <a class="nav-link" (click)="this.authService.logout()" routerLink="/login"> Logout</a>
     </button>
   </li>
+</div>
 <body>
 <div class="container mt-5">
   <form [formGroup]="postForm" (ngSubmit)="onSubmit()">

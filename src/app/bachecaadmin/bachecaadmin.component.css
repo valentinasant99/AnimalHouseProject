@@ -1,3 +1,6 @@
+body{
+  background: transparent;
+}
 .form-signin
 {
   background-color: bisque;
