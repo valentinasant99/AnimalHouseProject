@@ -19,4 +19,22 @@ p{
   font-size: 12pt;
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
+@media only screen and (max-width: 480px) {
+  .content {
+    padding: 8px;
+  }
+
+  #cardAnimal {
+    margin-top: 20px;
+  }
+
+  mat-toolbar {
+    font-size: 18pt;
+    padding-left: 0;
+  }
+
+  p {
+    font-size: 10pt;
+  }
+}
 

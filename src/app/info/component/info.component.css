@@ -25,5 +25,20 @@ mat-toolbar{
   padding-left: 35%;
 }
 
+@media only screen and (max-width: 480px) {
+  #cardAnimal {
+    margin-top: 20px;
+  }
+
+  p {
+    font-size: 10pt;
+  }
+
+  mat-toolbar {
+    font-size: 18pt;
+    padding-left: 15%;
+  }
+}
+
 
 

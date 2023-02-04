@@ -152,3 +152,37 @@ a{
   color: white;
   margin-bottom: 20%;
 }
+@media screen and (max-width: 480px) {
+  .about-left, .about-right {
+    height: auto;
+  }
+
+  .about-left-content, .about-right {
+    padding: 2rem;
+  }
+
+  .about-img img, .shadow {
+    width: 150px;
+    height: 150px;
+  }
+
+  .about-left-content h2, .about-right h1 {
+    font-size: 1.5rem;
+  }
+
+  .about-right h1 {
+    font-size: 3rem;
+  }
+
+  .about-btns {
+    flex-direction: column;
+  }
+
+  .d-flex {
+    margin-left: 0;
+  }
+
+  #bottoneloginutente, #bottoneloginadmin {
+    margin-left: 0;
+  }
+}

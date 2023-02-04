@@ -83,3 +83,20 @@ h1 {
   margin-left:340%;
 
 }
+@media (max-width: 480px) {
+  form {
+    width: 100%;
+  }
+  #posts {
+    width: 100%;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  .d-flex {
+    margin-left: 0;
+  }
+  #bottoneLeaderboard, #bottoneServizi, #bottoneLogout {
+    margin-left: 0;
+  }
+}
