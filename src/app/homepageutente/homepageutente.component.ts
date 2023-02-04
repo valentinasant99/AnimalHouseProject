@@ -11,11 +11,15 @@ export class HomepageutenteComponent implements OnInit{
   public postForm !: FormGroup;
   public posts: any[] = [];
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, public authService: AuthService) { }
 
   isShowDivIf = true;
   toggleDisplayDivIf() {
     this.isShowDivIf = !this.isShowDivIf;
+  }
+
+  user() {
+    return this.authService.userData?.nomeutente;
   }
 
   ngOnInit() {
