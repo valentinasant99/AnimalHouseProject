@@ -23,7 +23,6 @@ export class BachecaadminComponent {
         console.log('Post recuperati con successo ', this.posts);
       });
   }
-
   deletePost(post: any) {
     this.http.delete(`http://localhost:3000/Bacheca/${post.id}`)
       .subscribe(response => {
