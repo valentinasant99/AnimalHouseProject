@@ -24,19 +24,7 @@ export class QuizComponent implements OnInit {
   constructor(private httpclient: HttpClient , public authService: AuthService) { }
 
   ngOnInit(): void {
-    const button = document.getElementById("bottoneLeaderboard") as HTMLButtonElement;
-    if (this.authService.isLoggedIn()) {
-      button.disabled = false;
-    }
-    button.disabled = true;
   }
-
-  isShowDivIf = true;
-  toggleDisplayDivIf() {
-    this.isShowDivIf = !this.isShowDivIf;
-  }
-
-
 
   //lettura domande da  random api; parametri impostati: categoria e numero domande
   getQuiz() {

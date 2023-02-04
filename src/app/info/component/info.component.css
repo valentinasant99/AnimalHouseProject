@@ -32,11 +32,13 @@ mat-toolbar{
 
   p {
     font-size: 10pt;
+    margin-left: 2%;
   }
 
   mat-toolbar {
     font-size: 18pt;
-    padding-left: 15%;
+    padding-left: 1%;
+    padding-right: 25%;
   }
 }
 
