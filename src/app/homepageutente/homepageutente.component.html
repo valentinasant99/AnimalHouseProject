@@ -9,9 +9,10 @@
       <a class="nav-link" routerLink="/servizipresenza"> Servizi</a>
     </button>
   </li>
-  <li>
-    <button id="bottonelogout" mat-raised-button color="success" (click)="this.authService.logout()" routerLink="/loginadmin">
-      LOGOUT</button>
+  <li (click)=toggleDisplayDivIf() class="nav-item" routerLinkActive="active">
+    <button id="bottoneLogout">
+      <a class="nav-link" (click)="this.authService.logout()" routerLink="/login"> Logout</a>
+    </button>
   </li>
 </div>
 <div class="container mt-5">

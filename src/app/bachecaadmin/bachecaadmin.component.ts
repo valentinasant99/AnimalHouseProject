@@ -11,6 +11,10 @@ export class BachecaadminComponent {
   public posts: any[] = [];
 
   constructor(private http: HttpClient, public auth: AuthService) { }
+  isShowDivIf = true;
+  toggleDisplayDivIf() {
+    this.isShowDivIf = !this.isShowDivIf;
+  }
 
   ngOnInit() {
     this.getPosts();

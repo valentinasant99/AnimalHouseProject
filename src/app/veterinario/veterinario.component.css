@@ -10,7 +10,7 @@ form{
   margin-left: 15%;
 }
 .d-flex{
-  margin-left: 65%;
+  margin-left: 55%;
   margin-bottom: 18px;
 }
 
@@ -23,9 +23,15 @@ a:hover{
   color: white;
 }
 
-#bottoneservizi{
-  margin-left:250%;
+#bottoneServizi{
+  margin-left:349%;
 }
+
+a{
+  font-size: 14pt;
+  color: white;
+}
+
 label{
   margin:10px 0;
 }

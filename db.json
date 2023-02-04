@@ -127,8 +127,33 @@
   "Bacheca": [
     {
       "image": "",
-      "text": "ciao",
-      "id": 3
+      "text": "ciaoo",
+      "id": 4
+    },
+    {
+      "image": null,
+      "text": "ciaoooooo",
+      "id": 5
+    },
+    {
+      "image": "C:\\fakepath\\AQDX5559.JPG",
+      "text": "",
+      "id": 6
+    },
+    {
+      "image": "C:\\fakepath\\AQDX5559.JPG",
+      "text": "foto",
+      "id": 7
+    },
+    {
+      "image": "C:\\fakepath\\add.png",
+      "text": "",
+      "id": 8
+    },
+    {
+      "image": "C:\\fakepath\\AQDX5559.JPG",
+      "text": "",
+      "id": 9
     }
   ],
   "profile": {

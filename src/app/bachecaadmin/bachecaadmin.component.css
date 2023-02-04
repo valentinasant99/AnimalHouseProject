@@ -16,3 +16,27 @@ h1 {
   font-size: xx-large;
   font-weight: bolder;
 }
+.d-flex{
+  margin-left: 87%;
+
+  margin-top: 2%;
+}
+
+button{
+  background-color: darkgoldenrod;
+  border-color: darkgoldenrod;
+}
+
+a:hover{
+  color: white;
+}
+
+
+#bottoneServizi{
+  margin-left:500%;
+}
+
+a{
+  font-size: 14pt;
+  color: white;
+}

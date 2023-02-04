@@ -41,9 +41,6 @@ a:hover{
   color: white;
 }
 
-#bottoneservizi{
-  margin-left:250%;
-}
 /* Imposta lo stile per i label */
 label {
   font-weight: bold;
@@ -140,7 +137,8 @@ a:hover{
   margin-left:349%;
 }
 #bottoneLogout{
-  margin-left:350%;
+  margin-left:340%;
+
 }
 a{
   font-size: 14pt;

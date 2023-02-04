@@ -2,6 +2,7 @@
   width: 100%;
   margin: auto;
   min-height:50px;
+  margin-top: 1%;
 }
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
 
@@ -114,8 +115,25 @@
   }
 }
 .d-flex{
-  margin-left: 50%;
-  margin-bottom: 20px;
+  margin-left: 80%;
+
+}
+
+button{
+  background-color: darkgoldenrod;
+  border-color: darkgoldenrod;
+}
+
+a:hover{
+  color: white;
+}
+
+
+
+
+a{
+  font-size: 14pt;
+  color: white;
 }
 
 
@@ -124,16 +142,18 @@
   border-color: darkgoldenrod;
   width: 100%;
   height: 70%;
-  margin-left:400%;
+  margin-left:20%;
   color: white;
+  margin-bottom: 20%;
 }
 #bottoneloginadmin{
   background-color: darkgoldenrod;
   border-color: darkgoldenrod;
   width: 100%;
   height: 70%;
-  margin-left:420%;
+  margin-left:25%;
   color: white;
+  margin-bottom: 20%;
 }
 @media (max-width: 600px) {
   .carousel-caption {
