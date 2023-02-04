@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {HttpClient, HttpHeaders} from "@angular/common/http";
 import { AuthService } from '../services/auth.service';
 
+
 @Component({
   selector: 'app-quiz',
   templateUrl: './quiz.component.html',
@@ -18,15 +19,24 @@ export class QuizComponent implements OnInit {
   nomeutente: any;
   password: any;
   clicked = false;
-  disabilita = false;
 
 
   constructor(private httpclient: HttpClient , public authService: AuthService) { }
+
+  ngOnInit(): void {
+    const button = document.getElementById("bottoneLeaderboard") as HTMLButtonElement;
+    if (this.authService.isLoggedIn()) {
+      button.disabled = false;
+    }
+    button.disabled = true;
+  }
 
   isShowDivIf = true;
   toggleDisplayDivIf() {
     this.isShowDivIf = !this.isShowDivIf;
   }
+
+
 
   //lettura domande da  random api; parametri impostati: categoria e numero domande
   getQuiz() {
@@ -101,6 +111,4 @@ export class QuizComponent implements OnInit {
     }
   }
 
-  ngOnInit(): void {
-  }
 }

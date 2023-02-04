@@ -1,3 +1,8 @@
+img {
+  width: 400px;
+  height: 400px;
+}
+
 body {
   border-radius: 5%;
   margin-top: 2%;
@@ -5,9 +10,11 @@ body {
   margin-left: 5%;
   margin-right: 5%;
 }
+
 section{
   margin-left: 10%;
 }
+
 
 h1{
   text-align: center;
@@ -51,6 +58,26 @@ mat-radio-button {
 }
 
 
+#logout,
+#home {
+  margin-top: 1%;
+
+  display: float;
+
+  float: right;
+
+  width: 10%;
+
+  height: 8%;
+
+  margin-right: 5%;
+
+  background-color: #45464569;
+
+  color: black;
+
+}
+
 .d-flex{
   margin-left: 50%;
   margin-top: 0%;
@@ -73,4 +100,30 @@ a{
   color: white;
 }
 
+@media only screen and (max-width: 480px) {
+  body {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  section {
+    margin-left: 0;
+  }
+
+  #logout,
+  #home {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  #bottoneLeaderboard {
+    margin-left: 0;
+    mergin-right: 500%;
+  }
+
+  .d-flex {
+    margin-left: 0;
+  }
+}
 

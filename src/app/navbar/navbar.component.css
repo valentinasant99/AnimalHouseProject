@@ -33,3 +33,27 @@ button{
 button:hover{
   background: darkgoldenrod;
 }
+
+@media only screen and (max-width: 480px) {
+  .container{
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  img{
+    width: 40px;
+    height: 40px;
+  }
+
+  a{
+    font-size: 12pt;
+  }
+
+  .navbar-brand{
+    font-size: 18pt;
+  }
+
+  .d-flex{
+    margin-left: 0;
+  }
+}
