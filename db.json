@@ -8,18 +8,28 @@
   ],
   "signupUsers": [
     {
-      "nomeutente": "Sofia",
-      "animale": "tigre",
-      "email": "sofia@gmail.com",
-      "password": "tigre",
-      "id": 3
+      "nomeutente": "Valentina",
+      "email": "valentina@gmail.com",
+      "password": "ciao",
+      "punteggio": "80",
+      "animale": "gatto",
+      "id": 1
     },
     {
-      "nomeutente": "Vale",
-      "animale": "cavallo",
-      "email": "vale@gmail.com",
+      "nomeutente": "Laura",
+      "animale": "cane",
+      "email": "laura@gmail.com",
       "password": "ciao",
-      "id": 4
+      "id": 2,
+      "punteggio": "30"
+    },
+    {
+      "nomeutente": "Alessia",
+      "animale": "tigre",
+      "email": "alessia@gmail.com",
+      "password": "ciao",
+      "id": 3,
+      "punteggio": "60"
     }
   ],
   "amministratore": [
@@ -28,196 +38,36 @@
       "password": "delfino"
     }
   ],
-  "Veterinario": [
-    {
-      "nomeutente": "Alessia Tasca",
-      "telefono": "3391258031",
-      "date": "9",
-      "month": "",
-      "time": "10:00",
-      "id": 1
-    },
-    {
-      "nomeutente": "Alessia Tasca",
-      "telefono": "3391258031",
-      "date": "9",
-      "month": "",
-      "time": "10:00",
-      "id": 2
-    },
-    {
-      "nomeutente": "Alessia Tasca",
-      "telefono": "3391258031",
-      "date": "9",
-      "month": "",
-      "time": "10:00",
-      "id": 3
-    },
-    {
-      "nomeutente": "Alessia Tasca",
-      "telefono": "3391258031",
-      "date": "9",
-      "month": "",
-      "time": "10:00",
-      "id": 4
-    },
-    {
-      "nomeutente": "Alessia Tasca",
-      "telefono": "3391258031",
-      "date": "9",
-      "month": "",
-      "time": "10:00",
-      "id": 5
-    },
-    {
-      "nomeutente": "Alessia Tasca",
-      "telefono": "3391258031",
-      "date": "9",
-      "month": "",
-      "time": "10:00",
-      "id": 6
-    },
-    {
-      "nomeutente": "Alessia Tasca",
-      "telefono": "3391258031",
-      "date": "9",
-      "month": "",
-      "time": "10:00",
-      "id": 7
-    },
-    {
-      "nomeutente": "Alessia Tasca",
-      "telefono": "3362145056",
-      "date": "12",
-      "month": "Marzo",
-      "time": "9:00",
-      "id": 8
-    },
-    {
-      "nomeutente": "Valentina Sant",
-      "telefono": "33428127481",
-      "date": "9",
-      "month": "Maggio",
-      "time": "11:00",
-      "id": 9
-    },
-    {
-      "nomeutente": "sC",
-      "telefono": "CSC",
-      "date": "20",
-      "month": "Novembre",
-      "time": "18:00",
-      "id": 10
-    },
-    {
-      "nomeutente": null,
-      "telefono": null,
-      "date": null,
-      "month": null,
-      "time": null,
-      "id": 11
-    }
-  ],
+  "Veterinario": [],
   "Toelettatura": [],
-  "Taxi": [],
-  "Pensione": [],
-  "Dogsitter": [
+  "Taxi": [
     {
-      "nomeutente": "vale",
-      "telefono": "3395337688",
-      "date": "15",
+      "nomeutente": "valentina sant",
+      "telefono": "333333333333",
+      "date": "27",
       "month": "Febbraio",
-      "time": "17:00",
+      "time": "9:00",
       "id": 1
-    },
-    {
-      "nomeutente": "vale",
-      "telefono": "3395337688",
-      "date": null,
-      "month": null,
-      "time": null,
-      "id": 2
-    },
-    {
-      "nomeutente": "laura",
-      "telefono": "3395337688",
-      "date": "",
-      "month": "",
-      "time": "",
-      "id": 3
-    },
-    {
-      "nomeutente": null,
-      "telefono": null,
-      "date": null,
-      "month": null,
-      "time": null,
-      "id": 4
-    },
-    {
-      "nomeutente": null,
-      "telefono": null,
-      "date": null,
-      "month": null,
-      "time": null,
-      "id": 5
-    },
-    {
-      "nomeutente": "sv<v",
-      "telefono": "dacd",
-      "date": "18",
-      "month": "Ottobre",
-      "time": "17:00",
-      "id": 6
-    },
-    {
-      "nomeutente": null,
-      "telefono": null,
-      "date": null,
-      "month": null,
-      "time": null,
-      "id": 7
-    },
-    {
-      "nomeutente": null,
-      "telefono": null,
-      "date": null,
-      "month": null,
-      "time": null,
-      "id": 8
     }
   ],
+  "Pensione": [],
+  "Dogsitter": [],
   "Educazione": [],
   "Bacheca": [
     {
       "image": "",
-      "text": "ciaoo",
-      "id": 4
+      "text": "prova1",
+      "id": 1
     },
     {
-      "image": null,
-      "text": "ciaoooooo",
-      "id": 5
+      "image": "",
+      "text": "prova2",
+      "id": 2
     },
     {
-      "image": "C:\\fakepath\\AQDX5559.JPG",
-      "text": "",
-      "id": 6
-    },
-    {
-      "image": "C:\\fakepath\\AQDX5559.JPG",
-      "text": "foto",
-      "id": 7
-    },
-    {
-      "image": "C:\\fakepath\\add.png",
-      "text": "",
-      "id": 8
-    },
-    {
-      "image": "C:\\fakepath\\AQDX5559.JPG",
-      "text": "",
-      "id": 9
+      "image": "",
+      "text": "prova3",
+      "id": 3
     }
   ],
   "profile": {
