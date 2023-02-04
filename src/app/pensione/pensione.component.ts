@@ -29,13 +29,17 @@ export class PensioneComponent implements OnInit{
     });
   }
   onSubmit() {
-    this.http.post<any>("http://localhost:3000/Pensione", this.appointmentForm.value)
-      .subscribe(res=>{
-        alert("Prenotazione avvenuta con successo");
-        this.appointmentForm.reset();
-      }, err=>{
-        alert("Qualcosa è andato storto");
-      })
+    if (this.appointmentForm.valid) {
+      this.http.post<any>("http://localhost:3000/Pensione", this.appointmentForm.value)
+        .subscribe(res => {
+          alert("Prenotazione avvenuta con successo");
+          this.appointmentForm.reset();
+        }, err => {
+          alert("Qualcosa è andato storto");
+        });
+    } else {
+      alert("Compilare tutti i campi prima di prenotare");
+    }
   }
 }
 
