@@ -23,6 +23,11 @@ export class QuizComponent implements OnInit {
 
   constructor(private httpclient: HttpClient , public authService: AuthService) { }
 
+  isShowDivIf = true;
+  toggleDisplayDivIf() {
+    this.isShowDivIf = !this.isShowDivIf;
+  }
+
   //lettura domande da  random api; parametri impostati: categoria e numero domande
   getQuiz() {
     this.httpclient.get<any>("https://opentdb.com/api.php?amount=10&category=27&type=boolean").subscribe

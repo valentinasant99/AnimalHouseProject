@@ -78,6 +78,28 @@ mat-radio-button {
 
 }
 
+.d-flex{
+  margin-left: 87%;
+  margin-top: 2%;
+}
+
+
+a:hover{
+  color: white;
+}
+
+
+#bottoneServizi{
+  margin-left:500%;
+  background-color: darkgoldenrod;
+  border-color: darkgoldenrod;
+}
+
+a{
+  font-size: 14pt;
+  color: white;
+}
+
 
 
 @media (max-width: 576px) {

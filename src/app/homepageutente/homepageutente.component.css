@@ -35,6 +35,7 @@ form {
 button{
   background-color: darkgoldenrod;
   border-color: darkgoldenrod;
+  color: white;
 }
 
 a:hover{
