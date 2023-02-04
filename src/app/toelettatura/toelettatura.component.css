@@ -59,3 +59,17 @@ h2{
   font-family: Roboto;
 
 }
+
+@media only screen and (max-width: 480px) {
+  form {
+    width: 100%;
+    margin-left: 0;
+  }
+  .d-flex {
+    margin-left: 0;
+  }
+  #bottoneServizi {
+    margin-left: 0;
+    margin-right: 500%;
+  }
+}

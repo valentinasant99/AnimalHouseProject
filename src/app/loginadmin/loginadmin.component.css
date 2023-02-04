@@ -64,3 +64,30 @@ button {
 button:hover {
   opacity: 0.8;
 }
+
+@media only screen and (max-width: 480px) {
+  .form-signin {
+    max-width: 100%;
+    height: auto;
+    margin-left: 0;
+    margin-top: 0;
+    padding: 10px;
+  }
+  .form-signin .form-control {
+    width: 100%;
+    margin-left: 0;
+  }
+  .form-signin input[type="text"],
+  .form-signin input[type="password"] {
+    margin-left: 0;
+  }
+  img {
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+  }
+  button {
+    width: 100%;
+    margin-left: 0;
+  }
+}
