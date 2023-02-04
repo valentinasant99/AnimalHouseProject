@@ -13,7 +13,7 @@ export class QuizComponent implements OnInit {
   domande: any[] = [];
   risposte: any[] = [];
   selectedOption: any[] = [];
-  punteggio: number = 0 ;
+  punteggio: number=0;
   rispUtente: any[] = [];
   punteggioDB: any;
   nomeutente: any;
@@ -26,7 +26,7 @@ export class QuizComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  //lettura domande da  random api; parametri impostati: categoria e numero domande
+  //lettura domande da  random api, parametri impostati categoria true false e numero domande
   getQuiz() {
     this.httpclient.get<any>("https://opentdb.com/api.php?amount=10&category=27&type=boolean").subscribe
     (
@@ -41,18 +41,14 @@ export class QuizComponent implements OnInit {
   }
 
 
-  //confronta la risposta dell'utente con quella corretta e assegna il punteggio
+  //confronta la risposta dell'utente con quella corretta e assegna il punteggio all'utente se loggato
   controllaRisposte() {
-    //  alert("Hai già giocato");
     for (let i = 0; i < this.risposte.length; i++) {
-      //console.log("selected option: " + this.selectedOption[this.domande[i]]);
-      //console.log("risposta: " + this.risposte[i]);
       if (this.selectedOption[this.domande[i]] == this.risposte[i]) {
         this.punteggio = this.punteggio + 10;
       }else {
         this.punteggio = this.punteggio + 0;
       }
-          //console.log(this.punteggio);
       }
     this.punteggioDB = { punteggio: this.punteggio.toString() }
     if (this.authService.isLoggedIn()) {
@@ -64,7 +60,7 @@ export class QuizComponent implements OnInit {
 
 
 
-  //con la get prendiamo l'utente che sta giocando con la patch invece aggiorniamo il suo punteggio
+  //con la get salviamo il punteggio dell'utente
   getPunteggio() {
     this.httpclient.get<any>("http://localhost:3000/signupUsers")
       .subscribe(res => {
@@ -75,9 +71,8 @@ export class QuizComponent implements OnInit {
         });
         if (user) {
           let variabile = user.id;
-          //console.log(variabile);
           let header = { headers: new HttpHeaders({ 'Content-Type': 'application/json' }) };
-          this.httpclient.patch<any>("http://localhost:3000/signUpUsers" + "/" + variabile, this.punteggioDB, header)
+          this.httpclient.patch<any>("http://localhost:3000/signUpUsers" + "/" + variabile, this.punteggioDB , header)
             .subscribe(
             )
         } else {
@@ -89,13 +84,12 @@ export class QuizComponent implements OnInit {
   }
 
 
-  //resettiamo le caselle per ricominciare a giocare
+  //resetta il quiz cliccando sul bottone gioca
   azzeraQuiz() {
     this.getQuiz();
     for (let i = 0; i < this.domande.length; i++) {
       this.selectedOption[this.domande[i]] = "";
-      //console.log("Test2" +this.selectedOption[this.domande[i]]);
-      this.punteggio = 0;
+      this.punteggioDB = 0;
     }
   }
 

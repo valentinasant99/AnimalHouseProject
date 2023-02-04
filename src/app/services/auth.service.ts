@@ -19,7 +19,7 @@ export class AuthService {
     this.checkStorage();
   }
 
-  //salviamo dati sessione
+  //salvo i dati della sessione
   checkStorage() {
     const authToken = sessionStorage.getItem(AUTH_TOKEN_KEY);
     const userData = sessionStorage.getItem(AUTH_USER_DATA);

@@ -23,7 +23,7 @@ export class LoginComponent implements OnInit{
   login(){
     this.http.get<any>("http://localhost:3000/signupUsers")
       .subscribe(res=> {
-        let user = new userdtoModels();  //nuovo utente per la sessione
+        let user = new userdtoModels();  //creazione di un nuovo utente per la sessione
            user = res.find((a: any) => {
           return a.nomeutente === this.loginForm.value.nomeutente && a.password === this.loginForm.value.password
         });
