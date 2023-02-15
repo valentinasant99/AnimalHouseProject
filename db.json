@@ -12,7 +12,7 @@
       "email": "valentina@gmail.com",
       "password": "ciao",
       "punteggio": "80",
-      "animale": "gatto",
+      "animale": "cane",
       "id": 1
     },
     {
@@ -38,7 +38,16 @@
       "password": "delfino"
     }
   ],
-  "Veterinario": [],
+  "Veterinario": [
+    {
+      "nomeutente": "marco rossi",
+      "telefono": "2222222222",
+      "date": "14",
+      "month": "Febbraio",
+      "time": "18:00",
+      "id": 1
+    }
+  ],
   "Toelettatura": [],
   "Taxi": [
     {
@@ -51,7 +60,16 @@
     }
   ],
   "Pensione": [],
-  "Dogsitter": [],
+  "Dogsitter": [
+    {
+      "nomeutente": "marco",
+      "telefono": "33333",
+      "date": "18",
+      "month": "Febbraio",
+      "time": "18:00",
+      "id": 1
+    }
+  ],
   "Educazione": [],
   "Bacheca": [
     {
